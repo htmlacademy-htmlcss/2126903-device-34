@@ -54,13 +54,13 @@
                   <button class="navigation-filter-button"></button>
                   <ul class="navigation-list-info header-navigation-list">
                     <li class="navigation-list-info-item navigation-title">
-                      <a class="navigation-link" href="#">Доставка</a>
+                      <a class="navigation-link-filter" href="#">Доставка</a>
                     </li>
                     <li class="navigation-list-info-item navigation-title">
-                      <a class="navigation-link" href="#">Гарантия</a>
+                      <a class="navigation-link-filter" href="#">Гарантия</a>
                     </li>
                     <li class="navigation-list-info-item navigation-title">
-                      <a class="navigation-link" href="#">Контакты</a>
+                      <a class="navigation-link-filter" href="#">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -90,7 +90,7 @@
                     </li>
                   </ul>
                 </div>
-                <p class="header-decoration">01</p>
+                <span class="header-decoration">01</span>
             </div>
           </nav>
         </div>
@@ -98,7 +98,33 @@
       <main class="page-main">
           <div class="main-container">
             <section class="main-header">
-              <img src="img/main-parrot.png" width="560px" height="560px" alt="Квадракоптер">
+              <div class="main-img-container">
+                <img src="img/main-parrot.png" width="560px" height="560px" alt="Квадракоптер">
+                <button class="slider slider-left">
+                  <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24_641)">
+                    <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_24_641">
+                    <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+                <button class="slider slider-right">
+                  <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24_681)">
+                    <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_24_681">
+                    <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+              </div>
               <section class="main-header-discription-card">
                 <p class="main-title">Порхает как бабочка, <br> жалит как пчела!</p>
                 <p class="discription-card">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
