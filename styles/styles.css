@@ -214,6 +214,30 @@ p, span  {
     margin-right: 53px;
 }
 
+.main-aside-button {
+    margin: 0;
+    margin-right: 170px;
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: #F0F0F0;
+    border: 2px solid #DCDCDC;
+    color: #000000;
+    padding: 18px 39px;
+    cursor: pointer;
+}
+
+.email {
+    width: 525px;
+    border-style: none;
+    border-bottom: 2px solid #DCDCDC;;
+    background: #F0F0F0;
+    box-shadow: none;
+    padding: 19px 16px;
+}
 
 .header-container {
     width: 1160px;
@@ -257,6 +281,7 @@ p, span  {
 }
 
 .main-aside-container {
+    background: #F0F0F0;
     width: 1160px;
     margin: 0 auto;
 }
@@ -447,16 +472,46 @@ p, span  {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+    padding: 0 38px 0 43px;
 }
 
-.button::before {
+.main-header-button::before {
     position: absolute;
-    width: 160px;
+    top: 5px;
+    width: 220px;
+    left: 1px;
     height: 8px;
     display: block;
     background: #FFE17F;
     content: "";
+    z-index: -1;
 }
+
+.aside-button-our::before {
+    position: absolute;
+    top: 5px;
+    width: 270px;
+    left: 18px;
+    height: 8px;
+    display: block;
+    background: #FFE17F;
+    content: "";
+    z-index: -1;
+}
+
+.aside-button-info::before {
+    position: absolute;
+    top: 5px;
+    width: 270px;
+    left: 4px;
+    height: 8px;
+    display: block;
+    background: #FFE17F;
+    content: "";
+    z-index: -1;
+}
+
+.action-form
 
 .title-characteristic {
     font-family: 'Rubik';
@@ -618,6 +673,8 @@ p, span  {
 }
 
 .main-info-title {
+    margin: 0;
+    padding: 0;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
@@ -638,6 +695,7 @@ p, span  {
 
 .main-aside-contacts {
     position: relative;
+    margin-bottom: 80px;
 }
 
 .main-aside-our::before{
@@ -649,6 +707,31 @@ p, span  {
     width: 84px;
     height: 7px;
     content: "";
+}
+
+.aside-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.flex-form-container {
+    display: flex;
+}
+
+.action-form{
+    display: flex;
+}
+
+.form-container-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.aside-text {
+    width: 560px;
 }
 
 .main-aside-contacts::before{
@@ -664,6 +747,7 @@ p, span  {
 
 .main-aside-our-list {
     list-style-type: none;
+    margin-bottom: 30px;
 
 }
 
@@ -706,10 +790,17 @@ p, span  {
 }
 
 .aside-free {
+    position: relative;
     font-family: 'Rubik';
     font-weight: 400;
+    padding-left: 32px;
     color: #444444;
+}
 
+.aside-free::before {
+    position: absolute;
+    left: 0;
+    content: url("../img/icons/tick-big-geen.svg");
 }
 
 .service {
@@ -725,5 +816,90 @@ p, span  {
 .main-footer {
     align-self: end;
     margin: 0 auto;
+    padding-bottom: 61px;
     background: #444444;
+}
+
+.footer-logo{
+    margin-top: 62px;
+    margin-bottom: 35px;
+    fill: #FFC700;;
+}
+
+.footer-navigation-list {
+    margin-right: 35px;
+    flex-wrap: nowrap;
+}
+
+.link-number-footer {
+    margin-left: 130px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+
+}
+
+.footer-container-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 47px;
+    color: #fff;
+}
+
+.footer-link {
+    color: #FFFFFF;
+
+}
+
+.footer-text-info {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-decoration {
+    align-self: start;
+    width: 80px;
+    height: 7px;
+    background: #FFC700;
+}
+
+.footer-social-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-social-list-item {
+    position: relative;
+    margin-right: 15px;
+}
+
+.footer-social-list-item:last-child {
+    margin-right: 0;
+}
+
+.footer-social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.social-icon {
+   position: absolute;
+   top: 14px;
+   left: 12px;
 }
