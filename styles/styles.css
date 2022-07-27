@@ -97,8 +97,29 @@ p, span  {
     content: url("../img/icons/plus.svg");
     z-index: 2;
     right: 15px;
-    top: 14px;
+    top: 15px;
 
+}
+
+.characteristic-flex-container {
+    display: flex;
+}
+
+.card-list-characteristic {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-list-characteristic-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.card-list-characteristic-item:last-child {
+    margin-right: 0;
 }
 
 .novigation-flex-container-filter {
@@ -205,8 +226,27 @@ p, span  {
 }
 
 .service-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
+}
+
+
+.service-container::before {
+    position: absolute;
+    top: -23px;
+    right: 67px;
+    content: url("../img/icons/run-people.svg");
+}
+
+.service-description {
+    width: 448px;
+    height: 174px;
+    margin-top: -32px;
+    margin-bottom: 145px;
+    margin-right: 309px;
 }
 
 .service-advantage{
@@ -243,12 +283,66 @@ p, span  {
     left: 30px;
 }
 
-.slider-reight {
-    right: 30px;
+.slider-right {
+    right: 10px;
+}
+
+.discription-card {
+    margin-bottom: 51px;
+}
+
+.main-header-circle-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.circle-list-item{
+    margin-right: 20px;
+}
+
+.circle-list-item:last-child {
+    margin-right: 0;
+}
+
+.circle-button {
+    width: 12px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.checked-circle {
+    background-color: #000000;
+}
+
+.circle-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.main-header-button {
+    margin-left: 20px;
 }
 
 .main-img-container {
     position: relative;
+    margin-right: 40px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -140px;
+    margin-bottom: 70px;
+}
+
+.main-header-discription-card {
 }
 
 .navigation-link {
@@ -325,13 +419,18 @@ p, span  {
 }
 
 .main-title {
+    font-family: 'Raleway';
+    margin-top: 110px;
+    margin-bottom: 29px;
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
 }
 
+
 .button {
+    position: relative;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -343,12 +442,33 @@ p, span  {
     color: #000000;
 }
 
+.button::before {
+    position: absolute;
+    width: 160px;
+    height: 8px;
+    display: block;
+    background: #FFE17F;
+    content: "";
+}
+
 .title-characteristic {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 30px;
+    margin-bottom: 12px;
+}
+
+.text-card-list {
+    color: #444444;
+}
+
+.tiny-card-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .tiny-card-container {
@@ -357,7 +477,16 @@ p, span  {
     align-items: center;
     width: 160px;
     height: 160px;
+    margin-bottom: 33px;
     background-color: #FFE17F;
+}
+
+.tiny-card-list-item {
+    margin-right: 40px;
+}
+
+.tiny-card-list-item:last-child {
+    margin-right: 0;
 }
 
 .img-bottom {
@@ -383,12 +512,58 @@ p, span  {
 
 }
 
+.tiny-card {
+    margin-bottom: 160px;
+}
+
 .service-description-title {
     margin: 0;
     padding: 0;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 34px;
+}
+
+.service-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: -39px;
+    list-style-type: none;
+}
+
+.service-list::before{
+    position: absolute;
+    width: 7px;
+    height: 319px;
+    display: block;
+    background-color: #000000;
+    left: 280px;
+    bottom: 60px;
+    content: "";
+}
+
+.service-list-item-check {
+    background-color: #000000;
+}
+
+/*button*/
+
+.service-button-check {
+    color: #FFE17F;
+}
+
+.service-list-item {
+    margin-bottom: 30px;
+
+}
+
+.service-button {
+    padding: 9px 120px 9px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .service-advantage-card {
