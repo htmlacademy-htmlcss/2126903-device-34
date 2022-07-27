@@ -40,21 +40,247 @@ p, span  {
     font-family: 'Rubik';
 }
 
-.page-container {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-novigation {
+    padding-top: 46px;
+    background: #FFE17F;
+}
+
+.page-novigation-container{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.page-novigation-logo {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: -24px;
+}
+
+.novigation-flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.navigation-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation-filter-button {
+    position: relative;
+    margin-right: 240px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#FFE17F;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.navigation-filter-button:after {
+    position: absolute;
+    content: url("../img/icons/plus.svg");
+    z-index: 2;
+    right: 15px;
+    top: 14px;
+
+}
+
+.novigation-flex-container-filter {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.navigation-list-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 471px;
+    list-style-type: none;
+}
+
+.navigation-list-info:last-child {
+    margin-right: 0;
+}
+
+.navigation-list-item {
+    flex-wrap: wrap;
+    margin-right: 36px;
+}
+
+.navigation-list-item:last-child {
+    margin-right: 0;
+}
+
+.navigation-filtr {
+    display: flex;
+    justify-content: start;
+    height: 180px;
+    background: #FFE17F;
+    margin-top: -33px;
+}
+
+.navigation-filtr-list {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 55px;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.navigation-filtr-list:last-child {
+    margin-right: 0;
+}
+
+.navigation-filtr-list-item {
+    margin-bottom: 15px;
+}
+
+.navigation-filtr-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-decoration{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.search {
+    padding: 10px 48px;
+    width: 261px;
+    border-radius: 40px 0 0 40px;
+    border: 2px solid #000000;
+    background-color: #FFE17F;
+    box-shadow: none;
+}
+
+.aside-button {
+    padding: 10px 56px;
+    margin-left: -15px;
+    border-radius: 0 40px 40px 0;
+    border: 2px solid #000000;
+    background-color: #FFE17F;
+    margin-right: 53px;
+}
+
+
+.header-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.service-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.service-advantage{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-aside-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-footer-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-info {
     width: 1160px;
     margin: 0 auto;
 }
 
 .navigation-link {
+    position: relative;
+    padding-left: 19px;
     text-decoration: none;
+    font-family: 'Rubik';
     color: #000000;
 }
+
+.navigation-link-input {
+    position: relative;
+    padding-left: 27px;
+    margin-right: 120px;
+}
+
+.input-icon {
+    position:absolute;
+    top: 5px;
+    left: 0;
+}
+
+.navigation-link-basket{
+    padding-left: 27px;
+}
+
+.ipnut-basket {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.circle {
+    position: absolute;
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    background-color: #fff;
+    left: -13px;
+    top: 3px;
+    z-index: 1;
+}
+
 
 .navigation-title {
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
+    margin-right: 7px;
     text-transform: uppercase;
 
 }
@@ -87,9 +313,16 @@ p, span  {
 }
 
 .tiny-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 160px;
     height: 160px;
     background-color: #FFE17F;
+}
+
+.img-bottom {
+    align-self: end;
 }
 
 .tiny-card-img {
@@ -109,4 +342,86 @@ p, span  {
     letter-spacing: -0.02em;
     color: #000000;
 
+}
+
+.service-description-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.service-advantage-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 100px;
+    background-color: #FFE17F;
+}
+
+.service-advantage-text {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.service-advantage-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-info-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.aside-our-list-item {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.contacts-title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.link-number {
+    color: #000000;
+}
+
+.aside-free {
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: #444444;
+
+}
+
+.service {
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+
+.main-aside {
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+
+.main-footer {
+    align-self: end;
+    margin: 0 auto;
+    background: #444444;
 }
