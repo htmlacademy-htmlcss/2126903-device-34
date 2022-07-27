@@ -231,6 +231,7 @@ p, span  {
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 
@@ -252,6 +253,7 @@ p, span  {
 .service-advantage{
     width: 1160px;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .main-aside-container {
@@ -265,6 +267,7 @@ p, span  {
 }
 
 .main-info {
+    display: flex;
     width: 1160px;
     margin: 0 auto;
 }
@@ -418,6 +421,10 @@ p, span  {
     margin-right: 0;
 }
 
+.service-advantage-container{
+
+}
+
 .main-title {
     font-family: 'Raleway';
     margin-top: 110px;
@@ -554,6 +561,22 @@ p, span  {
     color: #FFE17F;
 }
 
+.button-info {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(220, 220, 220, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.i-info {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+}
+
 .service-list-item {
     margin-bottom: 30px;
 
@@ -576,6 +599,7 @@ p, span  {
 }
 
 .service-advantage-text {
+    width: 910px;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 20px;
@@ -586,7 +610,10 @@ p, span  {
 }
 
 .service-advantage-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    background: #F0F0F0;
     color: #000000;
 }
 
@@ -595,6 +622,67 @@ p, span  {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
+    margin-top: 47px;
+    margin-bottom: 48px;
+}
+
+.main-info-text {
+    margin-bottom: 30px;
+    color: #444444;
+}
+
+.main-aside-our {
+    position: relative;
+    margin-right: 131px;
+}
+
+.main-aside-contacts {
+    position: relative;
+}
+
+.main-aside-our::before{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    width: 84px;
+    height: 7px;
+    content: "";
+}
+
+.main-aside-contacts::before{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    width: 84px;
+    height: 7px;
+    content: "";
+}
+
+.main-aside-our-list {
+    list-style-type: none;
+
+}
+
+.aside-our-list-item {
+    position: relative;
+    margin-left: -10px;
+    margin-bottom: 19px;
+
+}
+
+.aside-our-list-item::before {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    top: 5px;
+    left: -30px;
+    background: #FFC700;
+    content: "";
 }
 
 .aside-our-list-item {
