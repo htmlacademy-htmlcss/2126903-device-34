@@ -44,8 +44,8 @@
                       </svg>
                       <span>Коля Петухов</span>
                     </a>
-                    <a href="">
-                      <span class="exit">Выход</span>
+                    <a class="exit" href="#">
+                      <span class="exit">Выйти</span>
                     </a>
                   </p>
                   <ul class="navigation-list">
@@ -159,18 +159,20 @@
       </header>
       <main>
         <section class="breadcrumbs">
-          <h1 class="title-breadcrumbs">Моноподы для селфи</h1>
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-list-item">
-              <a class="breadcrumbs-list-item-link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs-list-item">
-              <a class="breadcrumbs-list-item-link" href="#">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs-list-item">
-              <a class="breadcrumbs-list-item-link" href="#">Моноподы дял селфи</a>
-            </li>
-          </ul>
+          <div class="catalog-header-container">
+            <h1 class="title-breadcrumbs">Моноподы для селфи</h1>
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list-item">
+                <a class="breadcrumbs-list-item-link" href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs-list-item">
+                <a class="breadcrumbs-list-item-link" href="#">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs-list-item">
+                <a class="breadcrumbs-list-item-link" href="#">Моноподы дял селфи</a>
+              </li>
+            </ul>
+          </div>
         </section>
         <div class="main-catalog-container">
           <section class="catalog-products">
@@ -203,7 +205,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цвет:</legend>
+                <legend class="catalog-filter-title catalog-filter-title-color">Цвет:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -244,7 +246,7 @@
               </fieldset>
 
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Bluetooth:</legend>
+                <legend class="catalog-filter-title catalog-filter-title-bluetooth">Bluetooth:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -272,7 +274,18 @@
                   <select class="select-control" aria-label="Популярные">
                     <option value="popular">Популярные</option>
                   </select>
-                  <div class="sort-cards-arrow"></div>
+                  <div class="sort-cards-arrow">
+                    <button class="arrow-filtr-button arrow-filtr-top">
+                      <svg class="filtr-svg" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.50024 0L10.5002 10L0.500244 10" />
+                      </svg>
+                    </button>
+                    <button class="arrow-filtr-button arrow-filtr-bottom">
+                      <svg class="filtr-svg" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.49976 10L0.499756 0H10.4998"/>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </section>
               <section class="cards">
@@ -316,7 +329,7 @@
                 </ul>
                 <button class="button-card-list">Загрузить ещё</button>
                 <div class="pagination">
-                  <button class="pagination-slider">Назад</button>
+                  <button class="pagination-slider pagination-slider-back">Назад</button>
                   <ul class="pagination-list">
                     <li class="pagination-list-item">
                       <a class="pagination-list-item-link" href="#">

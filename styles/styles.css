@@ -61,6 +61,7 @@ p, span  {
 .page-novigation {
     padding-top: 32px;
     background: #FFE17F;
+    padding-bottom: 6px;
 }
 
 .page-novigation-container{
@@ -185,6 +186,9 @@ p, span  {
     justify-content: flex-start;
     width: 471px;
     list-style-type: none;
+}
+
+.header-navigation-list {
 }
 
 .navigation-list-item {
@@ -699,6 +703,7 @@ p, span  {
 }
 
 .exit {
+    text-decoration: none;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -750,14 +755,15 @@ p, span  {
 }
 
 .navigation-link-input-name {
-    margin-right: 20px;
+    margin-right: 27px;
+    margin-left: -6px;
 }
 
 .input-icon {
     position:absolute;
     background-position: center;
-    top: 10px;
-    left: -25px;
+    top: 9px;
+    left: -22px;
 }
 
 .input-compare {
@@ -800,7 +806,6 @@ p, span  {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-right: 12px;
-
 }
 
 .navigation-list-info-item {
@@ -1365,7 +1370,7 @@ p, span  {
 }
 
 .footer-list-item:not(:last-child) {
-    margin-right: 9px;
+    margin-right: 21px;
 }
 
 .footer-link::after{
@@ -1396,7 +1401,7 @@ p, span  {
 }
 
 .footer-text-info {
-    margin-right: 102px;
+    margin-right: 113px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1798,6 +1803,12 @@ p, span  {
     width: 1160px;
     margin: 0 auto;
     margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.catalog-header-container {
+    margin-top: 5px;
+    margin-left: 60px;
 }
 
 .title-breadcrumbs {
@@ -1805,7 +1816,7 @@ p, span  {
     line-height: 50px;
     margin: 0;
     padding: 0;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .breadcrumbs-list {
@@ -1814,12 +1825,11 @@ p, span  {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin-bottom: 35px;
 }
 
 .breadcrumbs-list-item:not(:last-child) {
     position: relative;
-    margin-right: 35px;
+    margin-right: 37px;
 }
 
 .breadcrumbs-list-item::after {
@@ -1865,15 +1875,16 @@ p, span  {
 .catalog-filter {
     width: 200px;
     margin-top: 25px;
+    margin-left: 60px;
 }
 
 .sort-container {
-    padding: 20px 26px;
+    padding: 17px 26px;
 }
 
 .sort-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -1899,7 +1910,7 @@ p, span  {
 }
 
 .card-list-img{
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .info-card-container {
@@ -1931,7 +1942,7 @@ p, span  {
 .button-card-list {
     font-family: 'Raleway';
     width: 760px;
-    padding: 18px 0;
+    padding: 16px 0;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
@@ -1939,6 +1950,7 @@ p, span  {
     border: 3px solid #E5E5E5;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    margin-top: -3px;
     margin-bottom: 44px;
 }
 
@@ -1967,10 +1979,11 @@ p, span  {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    margin-right: 132px;
 }
 
 .pagination-list-item-link{
-    padding: 20px 17px;
+    padding: 20px 16px;
     font-family: 'Rubik';
     font-weight: 400;
     font-size: 16px;
@@ -1997,7 +2010,7 @@ p, span  {
 .pagination {
     width: 760px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 78px;
     background: #EBEBEB;
@@ -2005,7 +2018,7 @@ p, span  {
 
 .pagination-slider {
     font-family: 'Raleway';
-    padding: 20px 25px;
+    padding: 24px 25px;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
@@ -2028,6 +2041,10 @@ p, span  {
     outline: 2px solid #AF4FFF;
 }
 
+.pagination-slider-back {
+    margin-right: 142px;
+}
+
 
 /*filtr*/
 
@@ -2042,11 +2059,11 @@ p, span  {
 .range-scale {
     position: relative;
     height: 2px;
-    margin-bottom: 16px;
+    width: 200px;
+    margin-bottom: 15px;
     background-color: rgba(220, 220, 220, 1);
     border-radius: 2px;
 }
-
 
 .range-bar {
     position: absolute;
@@ -2067,18 +2084,19 @@ p, span  {
 
 .toggle-min {
     top: -8px;
-    left: -5px;
+    left: -8px;
 }
 
 .toggle-max{
     top: -8px;
-    right: 0;
+    right: -8px;
 }
 
 .range-wrapper-inputs {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .catalog-filter-label {
@@ -2109,7 +2127,7 @@ p, span  {
 .range-input-min {
     width: 10px;
     margin-left: -3px;
-    margin-right: 58px;
+    margin-right: 68px;
 }
 
 .range-input-max{
@@ -2125,11 +2143,11 @@ p, span  {
   /* Mark */
 .control-mark {
     position: absolute;
-    top: 3px;
+    top: 6px;
     left: 0;
-    width: 20px;
-    height: 20px;
-    outline: 3px solid #CCCCCC;
+    width: 17px;
+    height: 17px;
+    outline: 2px solid #CCCCCC;
     border-radius: 3px;
 }
 
@@ -2152,8 +2170,8 @@ p, span  {
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
     position: absolute;
-    top: -5px;
-    left:5px;
+    top: -7px;
+    left:3px;
     width: 10px;
     height: 10px;
     content: url("../img/icons/tick.svg");
@@ -2161,17 +2179,18 @@ p, span  {
 
 .control-input[type="checkbox"]:checked + .control-mark,
 .control-input[type="checkbox"]:checked + .control-mark {
-    outline: 3px solid #000000;
+    outline: 2px solid #000000;
 }
 
 .catalog-filter-list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    margin-bottom: 10px;
 }
 
 .catalog-filter-item:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 6px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -2190,12 +2209,20 @@ p, span  {
 }
 
 .control-input[type="radio"]:checked + .control-mark{
-    outline: 3px solid #000000;
+    outline: 2px solid #000000;
+}
+
+.control-label {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .button-filtr {
     font-family: 'Raleway';
     width: 220px;
+    margin-top: -10px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     z-index: 1;
@@ -2216,6 +2243,8 @@ p, span  {
 .text-filtr {
     font-family: 'Raleway';
     font-weight: 800;
+    margin-left: 14px;
+    margin-right: 199px;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.2em;
@@ -2223,7 +2252,8 @@ p, span  {
 }
 
 .text-main-filtr {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
+    margin-left: 0;
 }
 
 .catalog-filter-title {
@@ -2231,7 +2261,7 @@ p, span  {
     display: block;
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     font-family: 'Rubik';
     font-weight: 700;
     font-size: 18px;
@@ -2245,8 +2275,16 @@ p, span  {
     top: -12px;
     content: "";
     background-color: #000000;
-    width: 220px;
+    width: 200px;
     height: 2px;
+}
+
+.catalog-filter-title-color {
+    margin-bottom: 17px;
+}
+
+.catalog-filter-title-bluetooth {
+    margin-bottom: 15px;
 }
 
 .select-control {
@@ -2255,6 +2293,34 @@ p, span  {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    margin-right: 212px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+.sort-cards-arrow {
+    display: flex;
+}
+
+.arrow-filtr-button {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border: none;
+}
+
+.filtr-svg {
+    opacity: 0.3;
+}
+
+.arrow-filtr-button:hover  .filtr-svg{
+    opacity: 0.6;
+}
+
+.arrow-filtr-button:active .filtr-svg {
+    opacity: 1;
+}
+
+.arrow-filtr-button:focus-visible {
+    outline: 2px solid #AF4FFF;
 }
