@@ -500,15 +500,16 @@ p, span  {
 
 .circle-button {
     width: 12px;
-    height: 16px;
+    height: 12px;
     border-radius: 50%;
     background-color: #FFFFFF;
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
     cursor: pointer;
+    border:none;
 }
 
 .circle-button:hover {
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
     opacity: 0.6;
 }
 
@@ -1977,7 +1978,7 @@ p, span  {
 
 .card-button-link {
     position: absolute;
-    display: block;
+    display: none;
     text-decoration: none;
     top: 180px;
     left: 50%;
@@ -2052,12 +2053,16 @@ p, span  {
     opacity: 0.6;
 }
 
-.card-list-item-link-catalog:active {
+.card-list-item-link-catalog:hover ~ .card-button-link {
+    display: block;
+}
 
+.card-list-item-link-catalog:active {
+    opacity: 0.3;
 }
 
 .card-list-item-link-catalog:focus-visible {
-
+    border: 2px solid #AF4FFF;
 }
 
 .button-card-list {
@@ -2201,6 +2206,19 @@ p, span  {
     border-radius: 50%;
     border: 2px solid #000000;
     cursor: pointer;
+}
+
+.range-toggle:hover {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+}
+
+.range-toggle:active {
+    background: #000000;
+    border: 2px solid #000000;
+}
+
+.range-toggle:focus-visible {
+    outline: 2px solid #AF4FFF;
 }
 
 .toggle-min {
