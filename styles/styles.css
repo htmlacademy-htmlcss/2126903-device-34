@@ -99,7 +99,7 @@ p, span  {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .novigation-flex-container::after {
@@ -125,9 +125,8 @@ p, span  {
 .navigation-filtr {
     display: none;
     justify-content: start;
-    height: 180px;
     background: #FFE17F;
-    margin-top: -33px;
+    margin-top: -15px;
 }
 
 .navigation-filter-button {
@@ -141,6 +140,10 @@ p, span  {
     cursor: pointer;
 }
 
+.navigation-filter-button:focus ~ .navigation-filtr {
+    display: flex;
+}
+
 .navigation-filter-button:hover ~ .navigation-filtr {
     display: flex;
 }
@@ -151,9 +154,10 @@ p, span  {
 }
 
 .navigation-filtr-button-container{
-    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
     cursor: pointer;
 }
 
@@ -195,17 +199,16 @@ p, span  {
 
 .novigation-flex-container-filter {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 10px;
 
 }
 
 .navigation-list-info {
-    margin-left: 235px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 0;
     width: 471px;
     list-style-type: none;
 }
@@ -239,7 +242,7 @@ p, span  {
 }
 
 .navigation-filtr-list-item {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .navigation-filtr-link {
@@ -832,7 +835,6 @@ p, span  {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin-right: 12px;
 }
 
 .navigation-list-info-item {
