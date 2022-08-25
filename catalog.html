@@ -10,6 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
+        <h1 class="visually-hidden">Товары магазина device</h1>
         <div class="header-container">
           <a class="header-logo-link" href="#">
           <svg class="page-novigation-logo" width="145" height="37" viewBox="0 0 145 37"  xmlns="http://www.w3.org/2000/svg" aria-label="Логотип device.">
@@ -27,7 +28,7 @@
                 <div class="novigation-flex-container">
                   <form class="page-novigation-form" action="#">
                       <input class="search" type="email" name="email" placeholder="Текст поиска" aria-label="Поиск." required >
-                      <button class="aside-button">Найти</button>
+                      <button class="aside-button" type="button">Найти</button>
                   </form>
                   <p class="visually-hidden">
                     <a class="navigation-link navigation-link-input" href="#">
@@ -77,7 +78,7 @@
                             <img class="popover-card" width="39" height="43" src="img/product-1.png" alt="Любительская селфи-палка">
                             <span class="popover-text">Любительская селфи-палка</span>
                           </a>
-                          <button class="popover-close-button">
+                          <button class="popover-close-button" type="button">
                             <svg class="popover-close-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                             </svg>
@@ -90,7 +91,7 @@
                             <span class="popover-text">Профессиональная
                               селфи-палка</span>
                           </a>
-                          <button class="popover-close-button">
+                          <button class="popover-close-button" type="button">
                             <svg class="popover-close-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                             </svg>
@@ -102,7 +103,7 @@
                         <span class="popover-text">Сумма: 2000 ₽</span>
                       </div>
                       <div class="popover-button-container">
-                        <button class="popover-button">Открыть корзину</button>
+                        <a class="popover-button">Открыть корзину</a>
                       </div>
                     </div>
                   </div>
@@ -110,7 +111,7 @@
                 <div class="novigation-flex-container-filter">
                   <div class="navigation-filtr-button-container">
                     <span class="navigation-title">Каталог товаров</span>
-                    <button class="navigation-filter-button">
+                    <button class="navigation-filter-button" type="button">
                       <svg class="filter-button-plus" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
                       </svg>
@@ -187,10 +188,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -278,12 +279,12 @@
                     <option value="popular">Популярные</option>
                   </select>
                   <div class="sort-cards-arrow">
-                    <button class="arrow-filtr-button arrow-filtr-top">
+                    <button class="arrow-filtr-button arrow-filtr-top" type="button">
                       <svg class="filtr-svg" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.50024 0L10.5002 10L0.500244 10" />
                       </svg>
                     </button>
-                    <button class="arrow-filtr-button arrow-filtr-bottom">
+                    <button class="arrow-filtr-button arrow-filtr-bottom" type="button">
                       <svg class="filtr-svg" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.49976 10L0.499756 0H10.4998"/>
                       </svg>
@@ -338,9 +339,9 @@
                     <a class="card-button-link" href="#">Подробнее</a>
                   </li>
                 </ul>
-                <button class="button-card-list">Загрузить ещё</button>
+                <button class="button-card-list" type="button">Загрузить ещё</button>
                 <div class="pagination">
-                  <button class="pagination-slider pagination-slider-back">Назад</button>
+                  <a class="pagination-slider pagination-slider-back">Назад</a>
                   <ul class="pagination-list">
                     <li class="pagination-list-item">
                       <a class="pagination-list-item-link" href="#">
@@ -368,7 +369,7 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="pagination-slider">Вперёд</button>
+                  <a class="pagination-slider">Вперёд</a>
                 </div>
               </section>
             </section>
@@ -403,7 +404,7 @@
                 <a class="navigation-link footer-link" href="#">Контакты</a>
               </li>
             </ul>
-            <a class="link-number link-number-footer footer-number" href="#">
+            <a class="link-number link-number-footer footer-number" href="+7 (812) 812-12-12">
               Тел.: +7 (812) 812-12-12
             </a>
           </div>

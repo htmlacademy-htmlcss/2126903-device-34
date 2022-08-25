@@ -363,7 +363,7 @@ p, span  {
     border-radius: 0 40px 40px 0;
     border: 2px solid #000000;
     background-color: #FFE17F;
-    margin-right: 40px;
+    margin-right: 49px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -2219,6 +2219,7 @@ p, span  {
 }
 
 .pagination-slider {
+    display: block;
     font-family: 'Raleway';
     padding: 24px 25px;
     font-weight: 800;
