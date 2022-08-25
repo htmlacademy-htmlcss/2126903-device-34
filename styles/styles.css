@@ -180,6 +180,7 @@ p, span  {
 
 .card-list-characteristic {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -188,6 +189,7 @@ p, span  {
 .card-list-characteristic-item {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-right: 20px;
 }
 
@@ -206,6 +208,7 @@ p, span  {
 .navigation-list-info {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     width: 471px;
     list-style-type: none;
@@ -949,6 +952,7 @@ p, span  {
 
 .tiny-card-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -969,7 +973,7 @@ p, span  {
     margin-right: 40px;
 }
 
-.tiny-card-list-item:last-child {
+.tiny-card-list-item:nth-child(6n) {
     margin-right: 0;
 }
 
@@ -1065,6 +1069,7 @@ p, span  {
 
 .button-info {
     position: relative;
+    align-self: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1113,13 +1118,12 @@ p, span  {
     align-items: center;
     justify-content: center;
     width: 125px;
-    height: 100px;
     background-color: #FFE17F;
 }
 
 .service-advantage-text {
     width: 910px;
-    padding-top: 2px;
+    padding: 20px 0;
     margin-right: 42px;
     font-family: 'Raleway';
     font-weight: 800;
@@ -1132,7 +1136,7 @@ p, span  {
 
 .service-advantage-link {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     text-decoration: none;
     background: #F0F0F0;
     color: #000000;
@@ -1428,6 +1432,7 @@ p, span  {
 }
 
 .footer-text-info {
+    width: 240px;
     margin-right: 113px;
     font-weight: 400;
     font-size: 16px;
@@ -1457,11 +1462,12 @@ p, span  {
 
 .footer-navigation-list {
     display: flex;
+    width: 480px;
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-right: 176px;
+    margin-right: 150px;
     list-style-type: none;
 }
 
@@ -1470,7 +1476,7 @@ p, span  {
     margin-right: 15px;
 }
 
-.footer-social-list-item:last-child {
+.footer-social-list-item:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -1888,6 +1894,7 @@ p, span  {
 .breadcrumbs-list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -2030,9 +2037,11 @@ p, span  {
 .info-card-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards-title {
+    width: 250px;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -2105,11 +2114,13 @@ p, span  {
 }
 
 .pagination-list {
+    width: 220px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin-right: 132px;
+    margin-right: 120px;
 }
 
 .pagination-list-item-link{
