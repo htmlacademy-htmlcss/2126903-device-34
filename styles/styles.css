@@ -22,10 +22,6 @@
     font-display: swap;
 }
 
-html {
-    height: 100vh;
-}
-
 body {
     position: relative;
     display: flex;
@@ -38,6 +34,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+    overflow-x: hidden;
 }
 
 p, span  {
@@ -78,6 +75,7 @@ p, span  {
     margin-left: 60px;
     margin-top: 20px;
     margin-bottom: -24px;
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .header-logo-link:hover .page-novigation-logo {
@@ -88,9 +86,9 @@ p, span  {
     fill: #DCDCDC;
 }
 
-.header-logo-link:focus-visible .page-novigation-logo {
+.header-logo-link:focus .page-novigation-logo {
     fill: #000000;
-    outline: 2px solid #AF4FFF;
+    border: 2px solid #AF4FFF;
     box-shadow: none;
 }
 
