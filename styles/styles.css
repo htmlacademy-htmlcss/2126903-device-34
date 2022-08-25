@@ -22,6 +22,31 @@
     font-display: swap;
 }
 
+::-webkit-input-placeholder {
+  color: #000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+::-moz-placeholder {
+  color:#000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+:-ms-input-placeholder {
+  color:#000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+:-moz-placeholder {
+  color:#000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+
 body {
     position: relative;
     display: flex;
@@ -121,10 +146,15 @@ p, span  {
 }
 
 .navigation-filtr {
+    position: absolute;
+    width: 1160px;
+    height: 180px;
+    left: -60px;
     display: none;
     justify-content: start;
     background: #FFE17F;
     margin-top: -15px;
+    z-index: 2;
 }
 
 .navigation-filter-button {
@@ -134,7 +164,7 @@ p, span  {
     border-radius: 50%;
     background-color:#FFE17F;
     border: 2px solid rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -142,8 +172,8 @@ p, span  {
     display: flex;
 }
 
-.navigation-filter-button:hover ~ .navigation-filtr {
-    display: flex;
+.navigation-title:focus ~ .navigation-filtr {
+  display: flex;
 }
 
 .filter-button-plus {
@@ -153,6 +183,7 @@ p, span  {
 
 .navigation-filtr-button-container{
     display: inline-block;
+    position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: space-between;
@@ -191,6 +222,7 @@ p, span  {
     flex-direction: column;
     flex-wrap: wrap;
     margin-right: 20px;
+
 }
 
 .card-list-characteristic-item:last-child {
@@ -212,6 +244,7 @@ p, span  {
     padding: 0;
     width: 471px;
     list-style-type: none;
+    z-index: 3;
 }
 
 .header-navigation-list {
@@ -229,6 +262,7 @@ p, span  {
 .navigation-filtr-list {
     margin: 0;
     padding: 0;
+    margin-left: 60px;
     font-family: 'Rubik';
     font-weight: 400;
     font-size: 16px;
@@ -329,7 +363,9 @@ p, span  {
     border-radius: 0 40px 40px 0;
     border: 2px solid #000000;
     background-color: #FFE17F;
-    margin-right: 53px;
+    margin-right: 40px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .aside-button:hover {
@@ -383,11 +419,25 @@ p, span  {
 .email {
     width: 525px;
     border-style: none;
-    border-bottom: 2px solid #DCDCDC;;
+    border-bottom: 3px solid #DCDCDC;
     background: #F0F0F0;
     box-shadow: none;
     padding: 19px 16px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    outline: none;
 }
+
+.email::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.email:focus {
+  background: #DCDCDC;
+}
+
 
 .header-container {
     width: 1160px;
@@ -489,6 +539,7 @@ p, span  {
 
 .discription-card {
     margin-bottom: 51px;
+    color: #444444;
 }
 
 .main-header-circle-list {
@@ -635,11 +686,12 @@ p, span  {
     background: #1A1A1A;
 }
 
-.popover-button-container {
+.popover-link-container {
     padding: 20px;
 }
 
-.popover-button {
+.popover-link {
+    display: block;
     padding: 14px 25px;
     font-family: 'Raleway';
     font-weight: 800;
@@ -836,6 +888,8 @@ p, span  {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
 }
 
 .navigation-list-info-item {
@@ -941,6 +995,8 @@ p, span  {
     font-weight: 400;
     font-size: 36px;
     line-height: 30px;
+    color: #000000;
+
 }
 
 .text-card-list {
@@ -1020,6 +1076,7 @@ p, span  {
 
 .sersvice-description-text {
     width: 455px;
+    color: #444444;
 }
 
 .service-list {
@@ -1537,7 +1594,7 @@ p, span  {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
-    z-index: 2;
+    z-index: 4;
   }
 
 .modal {
@@ -1624,7 +1681,7 @@ p, span  {
     right: 20px;
     width: 13px;
     height: 12px;
-    content: url("../img/icons/Vector.svg");
+    content: url("../img/icons/massage.svg");
 }
 
 .name-icon::after {
@@ -1809,16 +1866,19 @@ p, span  {
 
 .info-block {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     top: 35px;
-    left: -130px;
+    left: -9px;
     padding: 19px;
     width: 162px;
     background-color: #000000;
-    z-index: 1;
+    z-index: 3;
 }
 
+.button-info-col:hover ~ .info-block {
+    display: flex;
+}
 
 .info-block-text {
     position: relative;
@@ -2091,6 +2151,7 @@ p, span  {
     text-transform: uppercase;
     margin-top: -3px;
     margin-bottom: 44px;
+    cursor: pointer;
 }
 
 .button-card-list:hover {
@@ -2371,6 +2432,7 @@ p, span  {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
 }
 
 .button-filtr {
