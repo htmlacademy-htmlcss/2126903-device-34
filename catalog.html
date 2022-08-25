@@ -27,8 +27,10 @@
             <div class="page-novigation-container">
                 <div class="novigation-flex-container">
                   <form class="page-novigation-form" action="#">
-                      <input class="search" type="email" name="email" placeholder="Текст поиска" aria-label="Поиск." required >
+                    <label class="label-search" for="#">
+                      <input class="search" type="search" name="search" placeholder="Текст поиска" required >
                       <button class="aside-button" type="button">Найти</button>
+                    </label>
                   </form>
                   <p class="visually-hidden">
                     <a class="navigation-link navigation-link-input" href="#">
@@ -46,7 +48,7 @@
                       <span>Коля Петухов</span>
                     </a>
                     <a class="exit" href="#">
-                      <span class="">Выйти</span>
+                      <span class="exit-text">Выйти</span>
                     </a>
                   </p>
                   <ul class="navigation-list">
@@ -213,35 +215,35 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
+                      <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Чёрный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
+                      <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="so-intense">
+                      <input class="visually-hidden control-input" type="checkbox" name="blue">
                       <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="sprekenhus">
+                      <input class="visually-hidden control-input" type="checkbox" name="red">
                       <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                      <input class="visually-hidden control-input" type="checkbox" name="pink">
                       <span class="control-mark"></span>
                       <span class="control-label">Розовый</span>
                     </label>
@@ -254,14 +256,14 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                      <input class="visually-hidden control-input" type="radio" name="yes" value="shaving-supplies" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products">
+                      <input class="visually-hidden control-input" type="radio" name="no" value="care-products">
                       <span class="control-mark"></span>
                       <span class="control-label">Нет</span>
                     </label>

@@ -10,6 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
+        <h1 class="visually-hidden">Магазин device</h1>
         <div class="header-container">
           <a class="header-logo-link" href="#">
           <svg class="page-novigation-logo" width="145" height="37" viewBox="0 0 145 37"  xmlns="http://www.w3.org/2000/svg" aria-label="Логотип device.">
@@ -26,8 +27,10 @@
             <div class="page-novigation-container">
                 <div class="novigation-flex-container">
                   <form class="page-novigation-form" action="#">
-                      <input class="search" type="email" name="email" placeholder="Текст поиска" required >
+                    <label class="label-search" for="#">
+                      <input class="search" type="search" name="search" placeholder="Текст поиска" required >
                       <button class="aside-button" type="button">Найти</button>
+                    </label>
                   </form>
                   <p class="">
                     <a class="navigation-link navigation-link-input" href="#">
@@ -162,9 +165,17 @@
               <div class="header-decoration-container">
                 <span class="header-decoration">01</span>
               </div>
+              <div class="header-decoration-container visually-hidden">
+                <span class="header-decoration">02</span>
+              </div>
+              <div class="header-decoration-container visually-hidden">
+                <span class="header-decoration">03</span>
+              </div>
               <section class="main-header">
                 <div class="main-img-container">
                   <img class="main-img" src="img/main-parrot.png" width="560" height="560" alt="Квадракоптер">
+                  <img class="main-img visually-hidden" src="img/slider-2.png" width="560" height="560" alt="Умные часы.">
+                  <img class="main-img visually-hidden" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка.">
                   <button class="slider slider-left" type="button">
                     <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
                       <g clip-path="url(#clip0_24_641)">
@@ -192,7 +203,6 @@
                 </div>
                 <section class="main-header-discription-card">
                   <h2 class="visually-hidden">Описание товара</h2>
-                  <h1 class="visually-hidden">Товары магазина device</h1>
                   <p class="main-title">Порхает как бабочка, <br> жалит как пчела!</p>
                   <p class="discription-card">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="circle-button-container">
@@ -220,59 +230,14 @@
                       </li>
                     </ul>
                 </section>
-              </section>
-            </div>
 
-            <div class="visually-hidden">
-              <div class="header-decoration-container">
-                <span class="header-decoration">02</span>
-              </div>
-              <section class="main-header">
-                <div class="main-img-container">
-                  <img class="main-img" src="img/slider-2.png" width="560" height="560" alt="Умные часы.">
-                  <button class="slider slider-left" type="button">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
-                      <g clip-path="url(#clip0_24_641)">
-                      <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black">
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                  <button class="slider slider-right" type="button">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер вправо.">
-                      <g clip-path="url(#clip0_24_681)">
-                      <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                </div>
-                <section class="main-header-discription-card">
+                <section class="main-header-discription-card visually-hidden">
                   <h2 class="visually-hidden">Описание товара</h2>
                   <p class="main-title">Худеем<br>
                     правильно!</p>
                   <p class="discription-card">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                   <div class="circle-button-container">
                     <a class="button main-header-button" href="#">Подробнее</a>
-                    <ul class="main-header-circle-list">
-                      <li class="circle-list-item">
-                        <button class="circle-button" type="button"></button>
-                      </li>
-                      <li class="circle-list-item">
-                        <button class="circle-button checked-circle" type="button"></button>
-                      </li>
-                      <li class="circle-list-item">
-                        <button class="circle-button" type="button"></button>
-                      </li>
-                    </ul>
                   </div>
                     <ul class="card-list-characteristic">
                       <li class="card-list-characteristic-item">
@@ -281,42 +246,8 @@
                       </li>
                     </ul>
                 </section>
-              </section>
-            </div>
 
-            <div class="visually-hidden">
-              <div class="header-decoration-container">
-                <span class="header-decoration">03</span>
-              </div>
-              <section class="main-header">
-                <div class="main-img-container">
-                  <img class="main-img" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка.">
-                  <button class="slider slider-left" type="button">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
-                      <g clip-path="url(#clip0_24_641)">
-                      <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                  <button class="slider slider-right" type="button">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер вправо.">
-                      <g clip-path="url(#clip0_24_681)">
-                      <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                </div>
-                <section class="main-header-discription-card">
+                <section class="main-header-discription-card visually-hidden">
                   <h2 class="visually-hidden">Описание товара</h2>
                   <p class="main-title">Делай селфи, <br> как Бен Стиллер!
                   <p class="discription-card">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
@@ -427,55 +358,23 @@
                       мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     <img class="service-img" width="136" height="165" src="img/icons/run-people.svg" alt="Декоративная картинка.">
                   </section>
+                  <section class="service-description visually-hidden">
+                    <h2 class="service-description-title">Гарантия</h2>
+                    <p>Если из-за возгорания купленного у нас товара у вас
+                      сгорит дом — не переживайте, мы выдадим вам новый.
+                      Товар, не дом, конечно же.
+                    </p>
+                    <img class="service-frame" width="171" height="195" src="img/icons/tools.svg" alt="Декоративная картинка.">
+                  </section>
+                  <section class="service-description visually-hidden">
+                    <h2 class="service-description-title">Кредит</h2>
+                    <p>
+                      Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+                    </p>
+                    <img class="service-frame" width="156" height="189" src="img/icons/loader.svg" alt="Декоративная картинка.">
+                  </section>
               </div>
           </section>
-
-          <section class="service visually-hidden">
-            <h2 class="visually-hidden">Преимущества</h2>
-            <div class="service-container">
-                <ul class="service-list">
-                  <li class="service-list-item service-list-item-check ">
-                    <button class="button service-button" type="button">Доставка</button>
-                  </li>
-                  <li class="service-list-item">
-                    <button class="button service-button service-button-check" type="button">Гаратия</button>
-                  </li>
-                  <li class="service-list-item">
-                    <button class="button service-button" type="button">Кредит</button>
-                  </li>
-                </ul>
-                <section class="service-description">
-                  <h2 class="service-description-title">Гарантия</h2>
-                  <p>Если из-за возгорания купленного у нас товара у вас
-                    сгорит дом — не переживайте, мы выдадим вам новый.
-                    Товар, не дом, конечно же.
-                  </p>
-                  <img class="service-frame" width="171" height="195" src="img/icons/tools.svg" alt="Декоративная картинка.">
-                </section>
-            </div>
-        </section>
-
-        <section class="service visually-hidden">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <div class="service-container">
-              <ul class="service-list">
-                <li class="service-list-item service-list-item-check ">
-                  <button class="button service-button" type="button">Доставка</button>
-                </li>
-                <li class="service-list-item">
-                  <button class="button service-button" type="button">Гаратия</button>
-                </li>
-                  <li class="service-list-item">
-                  <button class="button service-button service-button-check" type="button">Кредит</button>
-                </li>
-              </ul>
-              <section class="service-description">
-                <h2 class="service-description-title">Кредит</h2>
-                <p>
-                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-                </p>
-                <img class="service-frame" width="156" height="189" src="img/icons/loader.svg" alt="Декоративная картинка.">
-              </section>
           </div>
         </section>
         <section class="service-advantage">
@@ -530,8 +429,8 @@
             <div class="flex-form-container">
                 <div class="form-container-input">
                   <form class="action-form" action="#">
-                    <input class="email" required  type="email" name="email" placeholder="Ваш e-mail">
-                    <button class="main-aside-button" type="button">Подписаться</button>
+                      <input class="email" required  type="email" name="email" placeholder="Ваш e-mail">
+                      <button class="main-aside-button" type="button">Подписаться</button>
                   </form>
                   <span class="aside-free">Это бесплатно</span>
                 </div>
@@ -646,16 +545,16 @@
                 <span class="visually-hidden">Закрыть</span>
               </button>
             </div>
-            <form method="post">
+            <form method="post" action="#">
               <div class="modal-stok">
                 <label class="arrival-date">Ваше имя:
                   <span class="for-button-relative name-icon">
-                    <input class="text-input" type="text" placeholder="Введите имя">
+                    <input class="text-input" type="text" name="name" placeholder="Введите имя">
                   </span>
                 </label>
                 <label class="arrival-date">Ваш e-mail:
                   <span class="for-button-relative email-icon">
-                    <input class="text-input" type="email" placeholder="Почта">
+                    <input class="text-input" type="email" name="email" placeholder="Почта">
                   </span>
                   <span class="error-text">Забавный у вас адрес</span>
                 </label>
@@ -664,7 +563,7 @@
               <div class="modal-info">
                 <label class="arrival-date" for="arrival">Что нужно привезти:
                   <span class="for-button-relative">
-                    <input class="clothes-input" id="arrival" placeholder="В свободной форме">
+                    <input class="clothes-input" id="arrival" type="text" name="thing" placeholder="В свободной форме">
                   </span>
                 </label>
               <fieldset class="container">
@@ -676,7 +575,7 @@
                             к провозу багажа.</span>
                         </span>
                     </span>
-                </label>
+                <label>
                   <span class="field-box">
                     <button class="field-button minus" type="button">
                       <svg class="minus-svg" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">

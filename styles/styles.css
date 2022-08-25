@@ -62,10 +62,6 @@ body {
     overflow-x: hidden;
 }
 
-p, span  {
-    font-family: 'Rubik';
-}
-
 .page-container {
     display: flex;
     flex-direction: column;
@@ -135,7 +131,6 @@ p, span  {
 }
 
 .page-novigation-form {
-    display: flex;
     height: 40px;
 }
 
@@ -321,7 +316,6 @@ p, span  {
 
 .header-decoration-container {
     width: 1160px;
-    height: 130px;
     margin-top: -10px;
     background: #FFE17F;
 }
@@ -331,6 +325,7 @@ p, span  {
 }
 
 .header-decoration{
+    font-family: 'Rubik';
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -342,15 +337,18 @@ p, span  {
     color: #fff;
 }
 
+.label-search {
+  display: flex;
+}
+
 .search {
     padding: 10px 52px;
-    width: 261px;
+    width: 359px;
     border-radius: 40px 0 0 40px;
     border: 2px solid #000000;
     background-color: #FFE17F;
     box-shadow: none;
 }
-
 
 .search:focus-visible {
     box-shadow: none;
@@ -538,6 +536,7 @@ p, span  {
 }
 
 .discription-card {
+    font-family: "Rubik";
     margin-bottom: 51px;
     color: #444444;
 }
@@ -778,6 +777,7 @@ p, span  {
 }
 
 .exit {
+    font-family: 'Rubik';
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -1000,6 +1000,7 @@ p, span  {
 }
 
 .text-card-list {
+    font-family: "Rubik";
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -1075,6 +1076,7 @@ p, span  {
 }
 
 .sersvice-description-text {
+    font-family: "Rubik";
     width: 455px;
     color: #444444;
 }
@@ -1227,6 +1229,7 @@ p, span  {
 }
 
 .main-info-text {
+    font-family: "Rubik";
     margin-bottom: 29px;
     color: #444444;
 }
