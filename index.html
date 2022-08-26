@@ -10,6 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
+        <h1 class="visually-hidden">Магазин device</h1>
         <div class="header-container">
           <a class="header-logo-link" href="#">
           <svg class="page-novigation-logo" width="145" height="37" viewBox="0 0 145 37"  xmlns="http://www.w3.org/2000/svg" aria-label="Логотип device.">
@@ -26,8 +27,12 @@
             <div class="page-novigation-container">
                 <div class="novigation-flex-container">
                   <form class="page-novigation-form" action="#">
-                      <input class="search" type="email" name="email" placeholder="Текст поиска" required >
-                      <button class="aside-button">Найти</button>
+                    <label class="label-search">
+                      <input class="search" type="search" name="search" placeholder="Текст поиска" required >
+                    </label>
+                    <label class="label-search">
+                      <button class="aside-button" type="button">Найти</button>
+                    </label>
                   </form>
                   <p class="">
                     <a class="navigation-link navigation-link-input" href="#">
@@ -75,7 +80,7 @@
                             <img class="popover-card" width="39" height="43" src="img/product-1.png" alt="Любительская селфи-палка">
                             <span class="popover-text">Любительская селфи-палка</span>
                           </a>
-                          <button class="popover-close-button">
+                          <button class="popover-close-button" name="popover-close" type="button">
                             <svg class="popover-close-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                             </svg>
@@ -88,7 +93,7 @@
                             <span class="popover-text">Профессиональная
                               селфи-палка</span>
                           </a>
-                          <button class="popover-close-button">
+                          <button class="popover-close-button" name="popover-close" type="button">
                             <svg class="popover-close-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                             </svg>
@@ -99,15 +104,15 @@
                         <span class="popover-text">Товаров: 2</span>
                         <span class="popover-text">Сумма: 2000 ₽</span>
                       </div>
-                      <div class="popover-button-container">
-                        <button class="popover-button">Открыть корзину</button>
+                      <div class="popover-link-container">
+                        <a class="popover-link">Открыть корзину</a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="novigation-flex-container-filter">
                   <div class="navigation-filtr-button-container">
-                    <span class="navigation-title">Каталог товаров</span>
+                    <a href="#" class="navigation-title">Каталог товаров</a>
                     <button class="navigation-filter-button" type="button">
                       <svg class="filter-button-plus" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-label="Плюс.">
                         <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
@@ -162,10 +167,18 @@
               <div class="header-decoration-container">
                 <span class="header-decoration">01</span>
               </div>
+              <div class="header-decoration-container visually-hidden">
+                <span class="header-decoration">02</span>
+              </div>
+              <div class="header-decoration-container visually-hidden">
+                <span class="header-decoration">03</span>
+              </div>
               <section class="main-header">
                 <div class="main-img-container">
                   <img class="main-img" src="img/main-parrot.png" width="560" height="560" alt="Квадракоптер">
-                  <button class="slider slider-left">
+                  <img class="main-img visually-hidden" src="img/slider-2.png" width="560" height="560" alt="Умные часы.">
+                  <img class="main-img visually-hidden" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка.">
+                  <button class="slider slider-left" type="button">
                     <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
                       <g clip-path="url(#clip0_24_641)">
                       <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black"/>
@@ -177,7 +190,7 @@
                       </defs>
                       </svg>
                   </button>
-                  <button class="slider slider-right">
+                  <button class="slider slider-right" type="button">
                     <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер вправо.">
                       <g clip-path="url(#clip0_24_681)">
                       <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
@@ -191,19 +204,20 @@
                   </button>
                 </div>
                 <section class="main-header-discription-card">
+                  <h2 class="visually-hidden">Описание товара</h2>
                   <p class="main-title">Порхает как бабочка, <br> жалит как пчела!</p>
                   <p class="discription-card">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                   <div class="circle-button-container">
                     <a class="button main-header-button" href="#">Подробнее</a>
                     <ul class="main-header-circle-list">
                       <li class="circle-list-item">
-                        <button class="circle-button checked-circle"></button>
+                        <button class="circle-button checked-circle" name="slider-card" type="button"></button>
                       </li>
                       <li class="circle-list-item">
-                        <button class="circle-button"></button>
+                        <button class="circle-button" name="slider-card" type="button"></button>
                       </li>
                       <li class="circle-list-item">
-                        <button class="circle-button"></button>
+                        <button class="circle-button" name="slider-card" type="button"></button>
                       </li>
                     </ul>
                   </div>
@@ -218,58 +232,14 @@
                       </li>
                     </ul>
                 </section>
-              </section>
-            </div>
 
-            <div class="visually-hidden">
-              <div class="header-decoration-container">
-                <span class="header-decoration">02</span>
-              </div>
-              <section class="main-header">
-                <div class="main-img-container">
-                  <img class="main-img" src="img/slider-2.png" width="560" height="560" alt="Умные часы.">
-                  <button class="slider slider-left">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
-                      <g clip-path="url(#clip0_24_641)">
-                      <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black">
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                  <button class="slider slider-right">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер вправо.">
-                      <g clip-path="url(#clip0_24_681)">
-                      <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                </div>
-                <section class="main-header-discription-card">
+                <section class="main-header-discription-card visually-hidden">
+                  <h2 class="visually-hidden">Описание товара</h2>
                   <p class="main-title">Худеем<br>
                     правильно!</p>
                   <p class="discription-card">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                   <div class="circle-button-container">
                     <a class="button main-header-button" href="#">Подробнее</a>
-                    <ul class="main-header-circle-list">
-                      <li class="circle-list-item">
-                        <button class="circle-button"></button>
-                      </li>
-                      <li class="circle-list-item">
-                        <button class="circle-button checked-circle"></button>
-                      </li>
-                      <li class="circle-list-item">
-                        <button class="circle-button"></button>
-                      </li>
-                    </ul>
                   </div>
                     <ul class="card-list-characteristic">
                       <li class="card-list-characteristic-item">
@@ -278,55 +248,22 @@
                       </li>
                     </ul>
                 </section>
-              </section>
-            </div>
 
-            <div class="visually-hidden">
-              <div class="header-decoration-container">
-                <span class="header-decoration">03</span>
-              </div>
-              <section class="main-header">
-                <div class="main-img-container">
-                  <img class="main-img" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка.">
-                  <button class="slider slider-left">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
-                      <g clip-path="url(#clip0_24_641)">
-                      <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                  <button class="slider slider-right">
-                    <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер вправо.">
-                      <g clip-path="url(#clip0_24_681)">
-                      <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
-                      </g>
-                      <defs>
-                      <clipPath>
-                      <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
-                      </clipPath>
-                      </defs>
-                      </svg>
-                  </button>
-                </div>
-                <section class="main-header-discription-card">
+                <section class="main-header-discription-card visually-hidden">
+                  <h2 class="visually-hidden">Описание товара</h2>
                   <p class="main-title">Делай селфи, <br> как Бен Стиллер!
                   <p class="discription-card">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                   <div class="circle-button-container">
                     <a class="button main-header-button" href="#">Подробнее</a>
                     <ul class="main-header-circle-list">
                       <li class="circle-list-item">
-                        <button class="circle-button"></button>
+                        <button class="circle-button" type="button"></button>
                       </li>
                       <li class="circle-list-item">
-                        <button class="circle-button"></button>
+                        <button class="circle-button" type="button"></button>
                       </li>
                       <li class="circle-list-item">
-                        <button class="circle-button checked-circle"></button>
+                        <button class="circle-button checked-circle" type="button"></button>
                       </li>
                     </ul>
                   </div>
@@ -349,145 +286,98 @@
             </div>
 
             <section class="tiny-card">
+              <h2 class="visually-hidden">Разнообразие товаров</h2>
               <ul class="tiny-card-list">
                 <li class="tiny-card-list-item">
                   <a class="card-list-item-link" href="#">
-                    <div class="tiny-card-container">
-                      <img class="tiny-card-img" src="img/icons/Virtual-glass.svg" alt="Очки виртуальной реальности">
-                    </div>
-                    <span class="title-tiny-card">Виртуальная реальность</span>
+                    <div class="tiny-card-container virtual-glass"></div>
+                    <span class="title-tiny-card">Виртуальная <br> реальность</span>
                   </a>
                 </li>
                 <li class="tiny-card-list-item">
                     <a class="card-list-item-link" href="#">
-                      <div class="tiny-card-container">
-                        <img class="tiny-card-img img-bottom" src="img/icons/phone-on-stick.svg" alt="Селфипалка">
-                      </div>
+                      <div class="tiny-card-container monopod-self"></div>
                       <span class="title-tiny-card">Моноподы <br> для селфи</span>
                     </a>
                 </li>
                 <li class="tiny-card-list-item">
                   <a class="card-list-item-link" href="#">
-                    <div class="tiny-card-container">
-                    <img class="tiny-card-img" src="img/icons/camera.svg" alt="Камера">
-                    </div>
+                    <div class="tiny-card-container camera"></div>
                     <span class="title-tiny-card">Экшн-камеры</span>
                   </a>
                 </li>
                 <li class="tiny-card-list-item">
                   <a class="card-list-item-link" href="#">
-                  <div class="tiny-card-container">
-                    <img class="tiny-card-img" src="img/icons/watch-puls.svg"  alt="Фитнес-браслеты">
-                  </div>
+                  <div class="tiny-card-container whatch-plus"></div>
                   <span class="title-tiny-card">Фитнес-браслеты</span>
                   </a>
                 </li>
                 <li class="tiny-card-list-item">
                   <a class="card-list-item-link" href="#">
-                  <div class="tiny-card-container">
-                    <img class="tiny-card-img" src="img/icons/whatch.svg" alt="Умные часы">
-                  </div>
+                  <div class="tiny-card-container whatch"></div>
                   <span class="title-tiny-card">Умные часы</span>
                   </a>
                 </li>
                 <li class="tiny-card-list-item">
                   <a class="card-list-item-link" href="#">
-                  <div class="tiny-card-container">
-                    <img class="tiny-card-img" src="img/icons/parrot.svg" alt="Квадракоптер">
-                  </div>
+                  <div class="tiny-card-container parrot"></div>
                   <span class="title-tiny-card">Квадрокоптеры</span>
                   </a>
                 </li>
               </ul>
             </section>
           </div>
-          <section class="service ">
-              <div class="service-container ">
-                  <ul class="service-list">
-                    <li class="service-list-item service-list-item-check ">
-                      <button class="button service-button service-button-check">Доставка</button>
-                    </li>
-                    <li class="service-list-item">
-                      <button class="button service-button">Гарантия</button>
-                    </li>
-                    <li class="service-list-item">
-                      <button class="button service-button">Кредит</button>
-                    </li>
-                  </ul>
-                  <section class="service-description">
-                    <h2 class="service-description-title">Доставка</h2>
-                    <p class="sersvice-description-text">Мы с удовольствием доставим ваш товар прямо <br>
-                      к вашему подъезду совершенно бесплатно! Ведь
-                      мы неплохо заработаем, поднимая его на ваш этаж.
-                    </p>
-                    <img class="service-img" width="136" height="165" src="img/icons/run-people.svg" alt="Декоративная картинка.">
-                  </section>
-              </div>
-          </section>
-
-          <section class="service visually-hidden">
-            <div class="service-container">
-                <ul class="service-list">
-                  <li class="service-list-item service-list-item-check ">
-                    <button class="button service-button">Доставка</button>
-                  </li>
-                  <li class="service-list-item">
-                    <button class="button service-button service-button-check">Гаратия</button>
-                  </li>
-                  <li class="service-list-item">
-                    <button class="button service-button">Кредит</button>
-                  </li>
-                </ul>
-                <section class="service-description">
-                  <h2 class="service-description-title">Гарантия</h2>
-                  <p>Если из-за возгорания купленного у нас товара у вас
-                    сгорит дом — не переживайте, мы выдадим вам новый.
-                    Товар, не дом, конечно же.
-                  </p>
-                  <img class="service-frame" width="171" height="195" src="img/icons/Frame.svg" alt="Декоративная картинка.">
-                </section>
-            </div>
-        </section>
-
-        <section class="service visually-hidden">
-          <div class="service-container">
-              <ul class="service-list">
-                <li class="service-list-item service-list-item-check ">
-                  <button class="button service-button">Доставка</button>
-                </li>
-                <li class="service-list-item">
-                  <button class="button service-button">Гаратия</button>
-                </li>
-                  <li class="service-list-item">
-                  <button class="button service-button service-button-check">Кредит</button>
-                </li>
-              </ul>
-              <section class="service-description">
-                <h2 class="service-description-title">Кредит</h2>
-                <p>
-                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
-                </p>
-                <img class="service-frame" width="156" height="189" src="img/icons/Frame(1).svg" alt="Декоративная картинка.">
-              </section>
-          </div>
-        </section>
+            <section class="service ">
+              <h2 class="visually-hidden">Преимущества</h2>
+                <div class="service-container">
+                    <ul class="service-list">
+                      <li class="service-list-item service-list-item-check ">
+                        <button class="button service-button service-button-check" type="button">Доставка</button>
+                      </li>
+                      <li class="service-list-item">
+                        <button class="button service-button" type="button">Гарантия</button>
+                      </li>
+                      <li class="service-list-item">
+                        <button class="button service-button" type="button">Кредит</button>
+                      </li>
+                    </ul>
+                    <section class="service-description">
+                      <h2 class="service-description-title">Доставка</h2>
+                      <p class="sersvice-description-text run-people">Мы с удовольствием доставим ваш товар прямо <br>
+                        к вашему подъезду совершенно бесплатно! Ведь
+                        мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    </section>
+                    <section class="service-description visually-hidden">
+                      <h2 class="service-description-title">Гарантия</h2>
+                      <p class="sersvice-description-text calls">Если из-за возгорания купленного у нас товара у вас
+                        сгорит дом — не переживайте, мы выдадим вам новый.
+                        Товар, не дом, конечно же.
+                      </p>
+                    </section>
+                    <section class="service-description visually-hidden">
+                      <h2 class="service-description-title">Кредит</h2>
+                      <p class="sersvice-description-text people">
+                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+                      </p>
+                    </section>
+                </div>
+            </section>
         <section class="service-advantage">
           <div class="service-advantage-container">
             <a class="service-advantage-link" href="#">
-              <div class="service-advantage-card">
-                <img src="img/icons/car.svg" alt="Грузовой автомобиль">
-              </div>
+              <div class="service-advantage-card"></div>
               <p class="service-advantage-text">Доставим редкий товар под заказ</p>
-              <button class="button-info">
+              <span class="button-info">
                 <svg class="i-info" width="4" height="12" viewBox="0 0 4 12" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 0H1V2H3V0Z" />
                   <path d="M3 4H1V12H3V4Z" />
                 </svg>
-              </button>
+              </span>
             </a>
           </div>
         </section>
         <section class="main-info">
+          <h2 class="visually-hidden">Информация о компании</h2>
             <section class="main-aside-our">
               <h2 class="main-info-title">О нас</h2>
               <p class="main-info-text">Огромный выбор гаджетов не оставит равнодушным <br> гика, который есть в каждом из нас.</p>
@@ -504,7 +394,7 @@
               <p class="main-info-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки. </p>
               <h3 class="contacts-title">Интернет-магазин «Девайс»</h3>
               <p class="main-info-text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>
-                <a class="link-number footer-number" href="#">+7 (812) 812-12-12</a>
+                <a class="link-number footer-number" href="tel:7-812-812-12-12">+7 (812) 812-12-12</a>
               </p>
               <h3 class="contacts-title">Время работы</h3>
               <p class="main-info-text">пн—пт: с 10:00 до 22:00 <br>
@@ -522,8 +412,8 @@
             <div class="flex-form-container">
                 <div class="form-container-input">
                   <form class="action-form" action="#">
-                    <input class="email" required  type="email" name="email" placeholder="Ваш e-mail">
-                    <button class="main-aside-button">Подписаться</button>
+                      <input class="email" required  type="email" name="email" placeholder="Ваш e-mail">
+                      <button class="main-aside-button" type="button">Подписаться</button>
                   </form>
                   <span class="aside-free">Это бесплатно</span>
                 </div>
@@ -532,6 +422,7 @@
         </aside>
       </main>
       <footer class="main-footer">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="main-footer-container">
           <a class="footer-logo-link" href="#">
             <svg class="footer-logo" width="145" height="37" viewBox="0 0 145 37" xmlns="http://www.w3.org/2000/svg">
@@ -558,7 +449,7 @@
                 <a class="navigation-link footer-link" href="#">Контакты</a>
               </li>
             </ul>
-            <a class="link-number link-number-footer footer-number" href="#">
+            <a class="link-number link-number-footer footer-number" href="tel:7-812-812-12-12">
               Тел.: +7 (812) 812-12-12
             </a>
           </div>
@@ -606,7 +497,7 @@
                 </a>
               </li>
             </ul>
-            <a href="https://htmlacademy.ru/">
+            <a class="html-academy-logo-link" href="https://htmlacademy.ru/">
               <svg class="html-academy-logo" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип HtmlAcademy.">
                 <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
                 <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z" />
@@ -630,23 +521,23 @@
         <div class="modal modal-auth">
             <div class="modal-header-contaner">
               <h2 class="modal-title">Доставка под заказ</h2>
-              <button class="modal-close-button">
+              <button class="modal-close-button" type="button">
                 <svg class="close-icon" width="26" height="26" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                 </svg>
                 <span class="visually-hidden">Закрыть</span>
               </button>
             </div>
-            <form method="post">
+            <form method="post" action="#">
               <div class="modal-stok">
                 <label class="arrival-date">Ваше имя:
                   <span class="for-button-relative name-icon">
-                    <input class="text-input" type="text" placeholder="Введите имя">
+                    <input class="text-input" type="text" name="name" placeholder="Введите имя">
                   </span>
                 </label>
                 <label class="arrival-date">Ваш e-mail:
                   <span class="for-button-relative email-icon">
-                    <input class="text-input" type="email" placeholder="Почта">
+                    <input class="text-input" type="email" name="email" placeholder="Почта">
                   </span>
                   <span class="error-text">Забавный у вас адрес</span>
                 </label>
@@ -655,19 +546,19 @@
               <div class="modal-info">
                 <label class="arrival-date" for="arrival">Что нужно привезти:
                   <span class="for-button-relative">
-                    <input class="clothes-input" id="arrival" placeholder="В свободной форме">
+                    <input class="clothes-input" id="arrival" type="text" name="thing" placeholder="В свободной форме">
                   </span>
                 </label>
               <fieldset class="container">
                     <span class="container-info ">
                       <span class="text-col">Количество:</span>
-                        <button class="button-info-col" type="button"></button>
-                        <span class="info-block visually-hidden">
+                        <button class="button-info-col" name="info-col" type="button"></button>
+                        <span class="info-block">
                           <span class="info-block-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
                             к провозу багажа.</span>
                         </span>
                     </span>
-                </label>
+                <fieldset class="modal-button-price-container">
                   <span class="field-box">
                     <button class="field-button minus" type="button">
                       <svg class="minus-svg" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -683,10 +574,10 @@
                       <span class="visually-hidden">Плюс</span>
                     </button>
                   </span>
-                </label>
+                </fieldset>
               </fieldset>
               </div>
-              <button class="button modal-button"><span>Отправить</span></button>
+              <button class="button modal-button" type="button"><span>Отправить</span></button>
             </form>
         </div>
       </div>

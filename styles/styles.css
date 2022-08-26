@@ -22,8 +22,29 @@
     font-display: swap;
 }
 
-html {
-    height: 100vh;
+::-webkit-input-placeholder {
+  color: #000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+::-moz-placeholder {
+  color:#000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+:-ms-input-placeholder {
+  color:#000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
+}
+:-moz-placeholder {
+  color:#000000;
+  font-family: 'Rubik';
+  font-size: 16px;
+  line-height: 20px;
 }
 
 body {
@@ -38,10 +59,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-}
-
-p, span  {
-    font-family: 'Rubik';
+    overflow-x: hidden;
 }
 
 .page-container {
@@ -78,6 +96,7 @@ p, span  {
     margin-left: 60px;
     margin-top: 20px;
     margin-bottom: -24px;
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .header-logo-link:hover .page-novigation-logo {
@@ -88,10 +107,14 @@ p, span  {
     fill: #DCDCDC;
 }
 
-.header-logo-link:focus-visible .page-novigation-logo {
+.header-logo-link:focus .page-novigation-logo {
     fill: #000000;
-    outline: 2px solid #AF4FFF;
+    border: 2px solid #AF4FFF;
     box-shadow: none;
+}
+
+.header-logo-link:focus {
+  outline: none;
 }
 
 .novigation-flex-container {
@@ -123,10 +146,15 @@ p, span  {
 }
 
 .navigation-filtr {
+    position: absolute;
+    width: 1160px;
+    height: 180px;
+    left: -60px;
     display: none;
     justify-content: start;
     background: #FFE17F;
     margin-top: -15px;
+    z-index: 2;
 }
 
 .navigation-filter-button {
@@ -134,9 +162,10 @@ p, span  {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-left: 15px;
     background-color:#FFE17F;
     border: 2px solid rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 3;
     cursor: pointer;
 }
 
@@ -144,8 +173,8 @@ p, span  {
     display: flex;
 }
 
-.navigation-filter-button:hover ~ .navigation-filtr {
-    display: flex;
+.navigation-title:focus ~ .navigation-filtr {
+  display: flex;
 }
 
 .filter-button-plus {
@@ -155,6 +184,7 @@ p, span  {
 
 .navigation-filtr-button-container{
     display: inline-block;
+    position: relative;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: space-between;
@@ -182,6 +212,7 @@ p, span  {
 
 .card-list-characteristic {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -190,7 +221,9 @@ p, span  {
 .card-list-characteristic-item {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-right: 20px;
+
 }
 
 .card-list-characteristic-item:last-child {
@@ -208,9 +241,11 @@ p, span  {
 .navigation-list-info {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 0;
     width: 471px;
     list-style-type: none;
+    z-index: 3;
 }
 
 .header-navigation-list {
@@ -228,6 +263,7 @@ p, span  {
 .navigation-filtr-list {
     margin: 0;
     padding: 0;
+    margin-left: 60px;
     font-family: 'Rubik';
     font-weight: 400;
     font-size: 16px;
@@ -286,8 +322,8 @@ p, span  {
 
 .header-decoration-container {
     width: 1160px;
-    height: 130px;
     margin-top: -10px;
+    height: 118px;
     background: #FFE17F;
 }
 
@@ -296,6 +332,7 @@ p, span  {
 }
 
 .header-decoration{
+    font-family: 'Rubik';
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -307,15 +344,18 @@ p, span  {
     color: #fff;
 }
 
+.label-search {
+  display: flex;
+}
+
 .search {
     padding: 10px 52px;
-    width: 261px;
+    width: 372px;
     border-radius: 40px 0 0 40px;
     border: 2px solid #000000;
     background-color: #FFE17F;
     box-shadow: none;
 }
-
 
 .search:focus-visible {
     box-shadow: none;
@@ -328,7 +368,9 @@ p, span  {
     border-radius: 0 40px 40px 0;
     border: 2px solid #000000;
     background-color: #FFE17F;
-    margin-right: 53px;
+    margin-right: 49px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .aside-button:hover {
@@ -382,11 +424,25 @@ p, span  {
 .email {
     width: 525px;
     border-style: none;
-    border-bottom: 2px solid #DCDCDC;;
+    border-bottom: 3px solid #DCDCDC;
     background: #F0F0F0;
     box-shadow: none;
-    padding: 19px 16px;
+    padding: 16px 16px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    outline: none;
 }
+
+.email::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.email:focus {
+  background: #DCDCDC;
+}
+
 
 .header-container {
     width: 1160px;
@@ -404,10 +460,11 @@ p, span  {
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 53px;
 }
 
 .service-img {
+    width: 100px;
     right: 63px;
     top: -27px;
     position: absolute;
@@ -421,7 +478,7 @@ p, span  {
 
 .service-description {
     width: 479px;
-    height: 174px;
+    padding-bottom: 0;
     margin-top: -32px;
     margin-bottom: 145px;
     margin-right: 277px;
@@ -446,6 +503,10 @@ p, span  {
 
 .footer-logo-link {
     display: inline-block;
+}
+
+.footer-logo-link:focus {
+  outline: none;
 }
 
 .main-info {
@@ -487,7 +548,9 @@ p, span  {
 }
 
 .discription-card {
+    font-family: "Rubik";
     margin-bottom: 51px;
+    color: #444444;
 }
 
 .main-header-circle-list {
@@ -525,8 +588,7 @@ p, span  {
 }
 
 .circle-button:focus-visible {
-    outline: none;
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
 }
 
 .checked-circle {
@@ -634,11 +696,12 @@ p, span  {
     background: #1A1A1A;
 }
 
-.popover-button-container {
+.popover-link-container {
     padding: 20px;
 }
 
-.popover-button {
+.popover-link {
+    display: block;
     padding: 14px 25px;
     font-family: 'Raleway';
     font-weight: 800;
@@ -725,6 +788,7 @@ p, span  {
 }
 
 .exit {
+    font-family: 'Rubik';
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -777,7 +841,7 @@ p, span  {
 }
 
 .navigation-link-input-name {
-    margin-right: 28px;
+    margin-right: 25px;
     margin-left: -3px;
 }
 
@@ -828,13 +892,15 @@ p, span  {
     z-index: 1;
 }
 
-
 .navigation-title {
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+
 }
 
 .navigation-list-info-item {
@@ -843,10 +909,6 @@ p, span  {
 
 .navigation-title:last-child {
     margin-right: 0;
-}
-
-.service-advantage-container{
-
 }
 
 .main-title {
@@ -933,16 +995,19 @@ p, span  {
     z-index: -1;
 }
 
-.action-form
-
 .title-characteristic {
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 9px;
     font-family: 'Rubik';
     font-weight: 400;
     font-size: 36px;
     line-height: 30px;
+    color: #000000;
 }
 
 .text-card-list {
+    font-family: "Rubik";
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -951,6 +1016,7 @@ p, span  {
 
 .tiny-card-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -965,18 +1031,41 @@ p, span  {
     margin-bottom: 31px;
     background-color: #FFE17F;
     z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tiny-card-list-item {
     margin-right: 40px;
 }
 
-.tiny-card-list-item:last-child {
+.tiny-card-list-item:nth-child(6n) {
     margin-right: 0;
 }
 
-.img-bottom {
-    align-self: end;
+.virtual-glass {
+    background-image: url(../img/icons/Virtual-glass.svg);
+}
+
+.monopod-self {
+    background-image: url(../img/icons/phone-on-stick.svg);
+    background-position-y: bottom;
+}
+
+.camera {
+    background-image: url(../img/icons/camera.svg);
+}
+
+.whatch-plus {
+    background-image: url(../img/icons/watch-puls.svg);
+}
+
+.whatch {
+    background-image: url(../img/icons/whatch.svg);
+}
+
+.parrot {
+    background-image: url(../img/icons/parrot.svg);
 }
 
 .card-list-item-link{
@@ -990,6 +1079,10 @@ p, span  {
 
 .card-list-item-link:active  {
     opacity: 0.3;
+}
+
+.card-list-item-link:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 
@@ -1017,7 +1110,30 @@ p, span  {
 }
 
 .sersvice-description-text {
+    font-family: "Rubik";
     width: 455px;
+    color: #444444;
+}
+
+.run-people::after {
+  position: absolute;
+  content: url("../img/icons/run-people.svg");
+  right: 62px;
+  top: -25px;
+}
+
+.calls::after {
+  position: absolute;
+  content: url("../img/icons/tools.svg");
+  right: 62px;
+  top: -25px;
+}
+
+.people::after {
+  position: absolute;
+  content: url("../img/icons/loader.svg");
+  right: 62px;
+  top: -25px;
 }
 
 .service-list {
@@ -1067,6 +1183,7 @@ p, span  {
 
 .button-info {
     position: relative;
+    align-self: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1115,13 +1232,15 @@ p, span  {
     align-items: center;
     justify-content: center;
     width: 125px;
-    height: 100px;
     background-color: #FFE17F;
+    background-image: url(../img/icons/car.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .service-advantage-text {
     width: 910px;
-    padding-top: 2px;
+    padding: 20px 0;
     margin-right: 42px;
     font-family: 'Raleway';
     font-weight: 800;
@@ -1134,7 +1253,7 @@ p, span  {
 
 .service-advantage-link {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     text-decoration: none;
     background: #F0F0F0;
     color: #000000;
@@ -1142,6 +1261,9 @@ p, span  {
 
 .service-advantage-link:hover .service-advantage-card {
     background: #FFC700;
+    background-image: url(../img/icons/car.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .service-advantage-link:hover .i-info {
@@ -1152,8 +1274,8 @@ p, span  {
     opacity: 0.3;
 }
 
-.service-advantage-link:focus-visible .service-advantage-container {
-    border: 2px solid #AF4FFF;
+.service-advantage-link:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 .main-info-title {
@@ -1168,6 +1290,7 @@ p, span  {
 }
 
 .main-info-text {
+    font-family: "Rubik";
     margin-bottom: 29px;
     color: #444444;
 }
@@ -1204,7 +1327,7 @@ p, span  {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 96px;
+    margin-bottom: 85px;
 }
 
 .aside-title {
@@ -1300,6 +1423,10 @@ p, span  {
 
 .link-number {
     color: #000000;
+}
+
+.link-number:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 .aside-free {
@@ -1430,6 +1557,8 @@ p, span  {
 }
 
 .footer-text-info {
+    font-family: 'Rubik';
+    width: 240px;
     margin-right: 113px;
     font-weight: 400;
     font-size: 16px;
@@ -1459,11 +1588,12 @@ p, span  {
 
 .footer-navigation-list {
     display: flex;
+    width: 480px;
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-right: 176px;
+    margin-right: 150px;
     list-style-type: none;
 }
 
@@ -1472,7 +1602,7 @@ p, span  {
     margin-right: 15px;
 }
 
-.footer-social-list-item:last-child {
+.footer-social-list-item:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -1519,9 +1649,10 @@ p, span  {
     opacity: 0.3;
 }
 
-.html-academy-logo:focus-visible {
-    outline: 1px solid #AF4FFF;
+.html-academy-logo-link:focus {
+  outline: 1px solid #AF4FFF;
 }
+
 
 /* Модальное окно */
 
@@ -1533,7 +1664,7 @@ p, span  {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
-    z-index: 2;
+    z-index: 4;
   }
 
 .modal {
@@ -1620,7 +1751,7 @@ p, span  {
     right: 20px;
     width: 13px;
     height: 12px;
-    content: url("../img/icons/Vector.svg");
+    content: url("../img/icons/massage.svg");
 }
 
 .name-icon::after {
@@ -1656,6 +1787,8 @@ p, span  {
     width: 20px;
     padding: 20px;
     background: #F0F0F0;
+    padding-bottom: 23px;
+    padding-top: 23px;
 }
 
 .field-number::-webkit-outer-spin-button,
@@ -1693,6 +1826,8 @@ p, span  {
     border: none;
     cursor: pointer;
     z-index: 2;
+    padding-bottom: 31px;
+    padding-top: 31px;
 }
 
 .field-button:hover .plus-svg{
@@ -1731,6 +1866,12 @@ p, span  {
     margin-top: -1px;
     color: #FF3D3D;
 
+}
+
+.modal-button-price-container {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .field-box {
@@ -1805,16 +1946,19 @@ p, span  {
 
 .info-block {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     top: 35px;
-    left: -130px;
+    left: -9px;
     padding: 19px;
     width: 162px;
     background-color: #000000;
-    z-index: 1;
+    z-index: 3;
 }
 
+.button-info-col:hover ~ .info-block {
+    display: flex;
+}
 
 .info-block-text {
     position: relative;
@@ -1884,12 +2028,13 @@ p, span  {
     line-height: 50px;
     margin: 0;
     padding: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .breadcrumbs-list {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -1989,6 +2134,7 @@ p, span  {
     top: 180px;
     left: 50%;
     transform: translate(-50%);
+    padding: 0 35px;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -1998,12 +2144,25 @@ p, span  {
     color: #000000;
 }
 
+.card-button-link:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+
 .card-button-link::after {
     position: absolute;
+    top: 6px;
+    left: 0;
     display: block;
     content: "";
     width: 100%;
+    height: 8px;
     background: #FFE17F;
+    z-index: -1;
+}
+
+.card-list-item-link-catalog:active ~ .card-button-link::after {
+    background: #FFC700;
 }
 
 .new-card {
@@ -2032,9 +2191,11 @@ p, span  {
 .info-card-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cards-title {
+    width: 250px;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -2067,8 +2228,8 @@ p, span  {
     opacity: 0.3;
 }
 
-.card-list-item-link-catalog:focus-visible {
-    border: 2px solid #AF4FFF;
+.card-list-item-link-catalog:focus{
+    outline: none;
 }
 
 .button-card-list {
@@ -2084,6 +2245,7 @@ p, span  {
     text-transform: uppercase;
     margin-top: -3px;
     margin-bottom: 44px;
+    cursor: pointer;
 }
 
 .button-card-list:hover {
@@ -2107,11 +2269,13 @@ p, span  {
 }
 
 .pagination-list {
+    width: 220px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin-right: 132px;
+    margin-right: 120px;
 }
 
 .pagination-list-item-link{
@@ -2149,6 +2313,7 @@ p, span  {
 }
 
 .pagination-slider {
+    display: block;
     font-family: 'Raleway';
     padding: 24px 25px;
     font-weight: 800;
@@ -2169,7 +2334,7 @@ p, span  {
     opacity: 0.3;
 }
 
-.pagination-slider:focus-visible {
+.pagination-slider:focus {
     outline: 2px solid #AF4FFF;
 }
 
@@ -2362,6 +2527,7 @@ p, span  {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
 }
 
 .button-filtr {

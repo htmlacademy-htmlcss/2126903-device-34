@@ -10,6 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header">
+        <h1 class="visually-hidden">Товары магазина device</h1>
         <div class="header-container">
           <a class="header-logo-link" href="#">
           <svg class="page-novigation-logo" width="145" height="37" viewBox="0 0 145 37"  xmlns="http://www.w3.org/2000/svg" aria-label="Логотип device.">
@@ -26,8 +27,12 @@
             <div class="page-novigation-container">
                 <div class="novigation-flex-container">
                   <form class="page-novigation-form" action="#">
-                      <input class="search" type="email" name="email" placeholder="Текст поиска" aria-label="Поиск." required >
-                      <button class="aside-button">Найти</button>
+                    <label class="label-search">
+                      <input class="search" type="search" name="search" placeholder="Текст поиска" required >
+                    </label>
+                    <label class="label-search">
+                      <button class="aside-button" type="button">Найти</button>
+                    </label>
                   </form>
                   <p class="visually-hidden">
                     <a class="navigation-link navigation-link-input" href="#">
@@ -45,7 +50,7 @@
                       <span>Коля Петухов</span>
                     </a>
                     <a class="exit" href="#">
-                      <span class="">Выйти</span>
+                      <span class="exit-text">Выйти</span>
                     </a>
                   </p>
                   <ul class="navigation-list">
@@ -77,7 +82,7 @@
                             <img class="popover-card" width="39" height="43" src="img/product-1.png" alt="Любительская селфи-палка">
                             <span class="popover-text">Любительская селфи-палка</span>
                           </a>
-                          <button class="popover-close-button">
+                          <button class="popover-close-button" type="button">
                             <svg class="popover-close-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                             </svg>
@@ -90,7 +95,7 @@
                             <span class="popover-text">Профессиональная
                               селфи-палка</span>
                           </a>
-                          <button class="popover-close-button">
+                          <button class="popover-close-button" type="button">
                             <svg class="popover-close-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
                               <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" />
                             </svg>
@@ -102,16 +107,16 @@
                         <span class="popover-text">Сумма: 2000 ₽</span>
                       </div>
                       <div class="popover-button-container">
-                        <button class="popover-button">Открыть корзину</button>
+                        <a class="popover-button">Открыть корзину</a>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="novigation-flex-container-filter">
                   <div class="navigation-filtr-button-container">
-                    <span class="navigation-title">Каталог товаров</span>
-                    <button class="navigation-filter-button">
-                      <svg class="filter-button-plus" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" class="navigation-title">Каталог товаров</a>
+                    <button class="navigation-filter-button" type="button">
+                      <svg class="filter-button-plus" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-label="Плюс.">
                         <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
                       </svg>
                     </button>
@@ -160,8 +165,9 @@
       </header>
       <main class="page-main">
         <section class="breadcrumbs">
+          <h2 class="visually-hidden">Новигация по страницам</h2>
           <div class="catalog-header-container">
-            <h1 class="title-breadcrumbs">Моноподы для селфи</h1>
+            <h2 class="title-breadcrumbs">Моноподы для селфи</h2>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-list-item">
                 <a class="breadcrumbs-list-item-link" href="#">Главная</a>
@@ -177,6 +183,7 @@
         </section>
         <div class="main-catalog-container">
           <section class="catalog-products">
+            <h2 class="visually-hidden">Фильтры</h2>
             <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
@@ -185,10 +192,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -210,35 +217,35 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="bed-head-for-men" checked>
+                      <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Чёрный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
+                      <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="so-intense">
+                      <input class="visually-hidden control-input" type="checkbox" name="blue">
                       <span class="control-mark"></span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="sprekenhus">
+                      <input class="visually-hidden control-input" type="checkbox" name="red">
                       <span class="control-mark"></span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                      <input class="visually-hidden control-input" type="checkbox" name="pink">
                       <span class="control-mark"></span>
                       <span class="control-label">Розовый</span>
                     </label>
@@ -251,14 +258,14 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group" value="shaving-supplies" checked>
+                      <input class="visually-hidden control-input" type="radio" name="yes" value="shaving-supplies" checked>
                       <span class="control-mark"></span>
                       <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="product-group" value="care-products">
+                      <input class="visually-hidden control-input" type="radio" name="no" value="care-products">
                       <span class="control-mark"></span>
                       <span class="control-label">Нет</span>
                     </label>
@@ -276,12 +283,12 @@
                     <option value="popular">Популярные</option>
                   </select>
                   <div class="sort-cards-arrow">
-                    <button class="arrow-filtr-button arrow-filtr-top">
+                    <button class="arrow-filtr-button arrow-filtr-top" type="button">
                       <svg class="filtr-svg" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.50024 0L10.5002 10L0.500244 10" />
                       </svg>
                     </button>
-                    <button class="arrow-filtr-button arrow-filtr-bottom">
+                    <button class="arrow-filtr-button arrow-filtr-bottom" type="button">
                       <svg class="filtr-svg" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.49976 10L0.499756 0H10.4998"/>
                       </svg>
@@ -290,6 +297,7 @@
                 </div>
               </section>
               <section class="cards">
+                <h2 class="visually-hidden">Карточки товаров</h2>
                 <ul class="cards-list">
                   <li class="card-list-item">
                     <a class="card-list-item-link-catalog" href="#">
@@ -335,9 +343,9 @@
                     <a class="card-button-link" href="#">Подробнее</a>
                   </li>
                 </ul>
-                <button class="button-card-list">Загрузить ещё</button>
+                <button class="button-card-list" type="button">Загрузить ещё</button>
                 <div class="pagination">
-                  <button class="pagination-slider pagination-slider-back">Назад</button>
+                  <a class="pagination-slider pagination-slider-back">Назад</a>
                   <ul class="pagination-list">
                     <li class="pagination-list-item">
                       <a class="pagination-list-item-link" href="#">
@@ -365,7 +373,7 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="pagination-slider">Вперёд</button>
+                  <a class="pagination-slider">Вперёд</a>
                 </div>
               </section>
             </section>
@@ -373,6 +381,7 @@
         </div>
       </main>
       <footer class="main-footer">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="main-footer-container">
           <a class="footer-logo-link" href="#">
             <svg class="footer-logo" width="145" height="37" viewBox="0 0 145 37" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип device.">
@@ -399,7 +408,7 @@
                 <a class="navigation-link footer-link" href="#">Контакты</a>
               </li>
             </ul>
-            <a class="link-number link-number-footer footer-number" href="#">
+            <a class="link-number link-number-footer footer-number" href="tel:7-812-812-12-12">
               Тел.: +7 (812) 812-12-12
             </a>
           </div>
@@ -447,20 +456,22 @@
                 </a>
               </li>
             </ul>
-            <svg class="html-academy-logo" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg" aria-label="Logo HtmlAcademy.">
-              <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
-              <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z" />
-              <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"/>
-              <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z" />
-              <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z" />
-              <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z" />
-              <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z" />
-              <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z" />
-              <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z" />
-              <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z" />
-              <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z" />
-              <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" />
-            </svg>
+            <a class="html-academy-logo-link" href="https://htmlacademy.ru/">
+              <svg class="html-academy-logo" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg" aria-label="Logo HtmlAcademy.">
+                <path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
+                <path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z" />
+                <path d="M26.5999 4.8001H21.7999V1.1001H19.7999V4.9001H17.8999V6.9001H19.7999V12.9001C19.7999 14.6001 20.7999 15.6001 22.4999 15.6001H26.5999V13.6001H22.8999C22.1999 13.6001 21.7999 13.2001 21.7999 12.5001V6.8001H26.5999V4.8001Z"/>
+                <path d="M41.1 4.6001C39.5 4.6001 38.2 5.4001 37.6 6.7001H37.5C36.9 5.5001 35.7 4.6001 34.1 4.6001C32.7 4.6001 31.6 5.4001 31 6.4001H30.9V4.8001H29V15.4001H31V10.0001C31 8.0001 32 6.5001 33.6 6.5001C35.1 6.5001 36 7.5001 36 9.1001V15.4001H38V9.8001C38 7.4001 39.4 6.5001 40.6 6.5001C42.1 6.5001 43 7.5001 43 9.1001V15.4001H45V8.9001C45.1 6.4001 43.6 4.6001 41.1 4.6001Z" />
+                <path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9001C50.2001 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z" />
+                <path d="M28.9001 19.6999C28.0001 18.5999 26.7001 17.8999 25.0001 17.8999C21.9001 17.8999 19.6001 20.1999 19.6001 23.4999C19.6001 26.7999 21.9001 29.0999 25.0001 29.0999C26.8001 29.0999 28.0001 28.2999 28.8001 27.1999H28.9001V28.7999H30.9001V18.1999H28.9001V19.6999ZM25.3001 27.0999C23.1001 27.0999 21.7001 25.4999 21.7001 23.4999C21.7001 21.4999 23.1001 19.8999 25.3001 19.8999C27.5001 19.8999 28.9001 21.4999 28.9001 23.4999C28.9001 25.3999 27.5001 27.0999 25.3001 27.0999Z" />
+                <path d="M44.2 21.9999C43.7 19.5999 41.5999 17.8999 38.7999 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.4999C33.2 26.5999 35.3999 29.0999 38.7999 29.0999C41.5999 29.0999 43.7 27.2999 44.2 24.8999H42.0999C41.6999 26.1999 40.3999 27.1999 38.7999 27.1999C36.5999 27.1999 35.2 25.5999 35.2 23.5999C35.2 21.5999 36.5999 19.9999 38.7999 19.9999C40.3999 19.9999 41.5999 20.9999 42.0999 22.1999H44.2V21.9999Z" />
+                <path d="M55.1 19.6999C54.2 18.5999 52.9001 17.8999 51.2001 17.8999C48.1001 17.8999 45.8 20.1999 45.8 23.4999C45.8 26.7999 48.1001 29.0999 51.2001 29.0999C53.0001 29.0999 54.2 28.2999 55 27.1999H55.1V28.7999H57.1V18.1999H55.1V19.6999ZM51.5 27.0999C49.3 27.0999 47.9001 25.4999 47.9001 23.4999C47.9001 21.4999 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1 21.4999 55.1 23.4999C55.1 25.3999 53.6 27.0999 51.5 27.0999Z" />
+                <path d="M68.6999 19.7999C67.7999 18.6999 66.4999 17.8999 64.7999 17.8999C61.6999 17.8999 59.3999 20.1999 59.3999 23.4999C59.3999 26.7999 61.5999 29.0999 64.7999 29.0999C66.4999 29.0999 67.7999 28.2999 68.5999 27.2999H68.6999V28.7999H70.6999V13.3999H68.6999V19.7999ZM65.0999 27.0999C62.8999 27.0999 61.4999 25.4999 61.4999 23.4999C61.4999 21.4999 62.8999 19.8999 65.0999 19.8999C67.2999 19.8999 68.6999 21.4999 68.6999 23.4999C68.5999 25.4999 67.1999 27.0999 65.0999 27.0999Z" />
+                <path d="M78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.4999C72.8 26.4999 74.9 29.0999 78.3 29.0999C80.8 29.0999 82.8 27.7999 83.5 25.4999H81.4C80.9 26.4999 79.8 27.0999 78.4 27.0999C76.5 27.0999 75.1 25.7999 75 24.1999H83.8C84 20.5999 81.8 17.8999 78.3 17.8999ZM78.3 19.7999C80 19.7999 81.3 20.7999 81.6 22.3999H75.1C75.4 20.8999 76.6 19.7999 78.3 19.7999Z" />
+                <path d="M98.2001 17.8999C96.6001 17.8999 95.3001 18.6999 94.6001 19.8999H94.5001C93.9001 18.6999 92.7001 17.8999 91.1001 17.8999C89.7001 17.8999 88.6001 18.5999 88.0001 19.6999V18.1999H86.1001V28.7999H88.1001V23.3999C88.1001 21.3999 89.1001 19.9999 90.7001 19.8999C92.2001 19.8999 93.1001 20.8999 93.1001 22.4999V28.7999H95.1001V23.1999C95.1001 20.7999 96.5001 19.8999 97.7001 19.8999C99.2001 19.8999 100.1 20.8999 100.1 22.4999V28.7999H102.1V22.2999C102.2 19.6999 100.7 17.8999 98.2001 17.8999Z" />
+                <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" />
+              </svg>
+            </a>
           </div>
         </div>
       </footer>
