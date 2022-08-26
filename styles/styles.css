@@ -892,7 +892,6 @@ body {
     z-index: 1;
 }
 
-
 .navigation-title {
     font-weight: 800;
     font-size: 18px;
@@ -904,20 +903,12 @@ body {
 
 }
 
-.navigation-title:focus {
-    outline: 2px solid #AF4FFF;
-}
-
 .navigation-list-info-item {
     margin-right: 39px;
 }
 
 .navigation-title:last-child {
     margin-right: 0;
-}
-
-.service-advantage-container{
-
 }
 
 .main-title {
@@ -1005,6 +996,9 @@ body {
 }
 
 .title-characteristic {
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 9px;
     font-family: 'Rubik';
     font-weight: 400;
     font-size: 36px;
@@ -1793,6 +1787,8 @@ body {
     width: 20px;
     padding: 20px;
     background: #F0F0F0;
+    padding-bottom: 23px;
+    padding-top: 23px;
 }
 
 .field-number::-webkit-outer-spin-button,
@@ -1830,6 +1826,8 @@ body {
     border: none;
     cursor: pointer;
     z-index: 2;
+    padding-bottom: 31px;
+    padding-top: 31px;
 }
 
 .field-button:hover .plus-svg{
