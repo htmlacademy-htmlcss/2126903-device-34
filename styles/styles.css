@@ -161,6 +161,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-left: 15px;
     background-color:#FFE17F;
     border: 2px solid rgba(0, 0, 0, 0.3);
     z-index: 3;
@@ -321,6 +322,7 @@ body {
 .header-decoration-container {
     width: 1160px;
     margin-top: -10px;
+    height: 118px;
     background: #FFE17F;
 }
 
@@ -347,7 +349,7 @@ body {
 
 .search {
     padding: 10px 52px;
-    width: 359px;
+    width: 372px;
     border-radius: 40px 0 0 40px;
     border: 2px solid #000000;
     background-color: #FFE17F;
@@ -424,7 +426,7 @@ body {
     border-bottom: 3px solid #DCDCDC;
     background: #F0F0F0;
     box-shadow: none;
-    padding: 19px 16px;
+    padding: 16px 16px;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
@@ -457,7 +459,7 @@ body {
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 53px;
 }
 
 .service-img {
@@ -475,7 +477,7 @@ body {
 
 .service-description {
     width: 479px;
-    height: 174px;
+    padding-bottom: 0;
     margin-top: -32px;
     margin-bottom: 145px;
     margin-right: 277px;
@@ -838,7 +840,7 @@ body {
 }
 
 .navigation-link-input-name {
-    margin-right: 28px;
+    margin-right: 25px;
     margin-left: -3px;
 }
 
@@ -1124,22 +1126,22 @@ body {
 .run-people::after {
   position: absolute;
   content: url("../img/icons/run-people.svg");
-  right: 0;
-  top: -15px;
+  right: 62px;
+  top: -25px;
 }
 
 .calls::after {
   position: absolute;
   content: url("../img/icons/tools.svg");
-  right: 0;
-  top: -15px;
+  right: 62px;
+  top: -25px;
 }
 
 .people::after {
   position: absolute;
   content: url("../img/icons/loader.svg");
-  right: 0;
-  top: -15px;
+  right: 62px;
+  top: -25px;
 }
 
 .service-list {
@@ -1333,7 +1335,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 96px;
+    margin-bottom: 85px;
 }
 
 .aside-title {
@@ -2024,7 +2026,7 @@ body {
     line-height: 50px;
     margin: 0;
     padding: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .breadcrumbs-list {
@@ -2330,7 +2332,7 @@ body {
     opacity: 0.3;
 }
 
-.pagination-slider:focus-visible {
+.pagination-slider:focus {
     outline: 2px solid #AF4FFF;
 }
 
