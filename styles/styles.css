@@ -113,6 +113,10 @@ body {
     box-shadow: none;
 }
 
+.header-logo-link:focus {
+  outline: none;
+}
+
 .novigation-flex-container {
     position: relative;
     display: flex;
@@ -457,6 +461,7 @@ body {
 }
 
 .service-img {
+    width: 100px;
     right: 63px;
     top: -27px;
     position: absolute;
@@ -495,6 +500,10 @@ body {
 
 .footer-logo-link {
     display: inline-block;
+}
+
+.footer-logo-link:focus {
+  outline: none;
 }
 
 .main-info {
@@ -576,8 +585,7 @@ body {
 }
 
 .circle-button:focus-visible {
-    outline: none;
-    border: 2px solid #AF4FFF;
+    outline: 2px solid #AF4FFF;
 }
 
 .checked-circle {
@@ -890,6 +898,11 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+
+}
+
+.navigation-title:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 .navigation-list-info-item {
@@ -1024,6 +1037,8 @@ body {
     margin-bottom: 31px;
     background-color: #FFE17F;
     z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tiny-card-list-item {
@@ -1034,8 +1049,29 @@ body {
     margin-right: 0;
 }
 
-.img-bottom {
-    align-self: end;
+.virtual-glass {
+    background-image: url(../img/icons/Virtual-glass.svg);
+}
+
+.monopod-self {
+    background-image: url(../img/icons/phone-on-stick.svg);
+    background-position-y: bottom;
+}
+
+.camera {
+    background-image: url(../img/icons/camera.svg);
+}
+
+.whatch-plus {
+    background-image: url(../img/icons/watch-puls.svg);
+}
+
+.whatch {
+    background-image: url(../img/icons/whatch.svg);
+}
+
+.parrot {
+    background-image: url(../img/icons/parrot.svg);
 }
 
 .card-list-item-link{
@@ -1049,6 +1085,10 @@ body {
 
 .card-list-item-link:active  {
     opacity: 0.3;
+}
+
+.card-list-item-link:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 
@@ -1079,6 +1119,27 @@ body {
     font-family: "Rubik";
     width: 455px;
     color: #444444;
+}
+
+.run-people::after {
+  position: absolute;
+  content: url("../img/icons/run-people.svg");
+  right: 0;
+  top: -15px;
+}
+
+.calls::after {
+  position: absolute;
+  content: url("../img/icons/tools.svg");
+  right: 0;
+  top: -15px;
+}
+
+.people::after {
+  position: absolute;
+  content: url("../img/icons/loader.svg");
+  right: 0;
+  top: -15px;
 }
 
 .service-list {
@@ -1178,6 +1239,9 @@ body {
     justify-content: center;
     width: 125px;
     background-color: #FFE17F;
+    background-image: url(../img/icons/car.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .service-advantage-text {
@@ -1203,6 +1267,9 @@ body {
 
 .service-advantage-link:hover .service-advantage-card {
     background: #FFC700;
+    background-image: url(../img/icons/car.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .service-advantage-link:hover .i-info {
@@ -1213,8 +1280,8 @@ body {
     opacity: 0.3;
 }
 
-.service-advantage-link:focus-visible .service-advantage-container {
-    border: 2px solid #AF4FFF;
+.service-advantage-link:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 .main-info-title {
@@ -1364,6 +1431,10 @@ body {
     color: #000000;
 }
 
+.link-number:focus {
+    outline: 2px solid #AF4FFF;
+}
+
 .aside-free {
     position: relative;
     font-family: 'Rubik';
@@ -1492,6 +1563,7 @@ body {
 }
 
 .footer-text-info {
+    font-family: 'Rubik';
     width: 240px;
     margin-right: 113px;
     font-weight: 400;
@@ -1583,9 +1655,10 @@ body {
     opacity: 0.3;
 }
 
-.html-academy-logo:focus-visible {
-    outline: 1px solid #AF4FFF;
+.html-academy-logo-link:focus {
+  outline: 1px solid #AF4FFF;
 }
+
 
 /* Модальное окно */
 
@@ -2057,6 +2130,7 @@ body {
     top: 180px;
     left: 50%;
     transform: translate(-50%);
+    padding: 0 35px;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -2066,12 +2140,25 @@ body {
     color: #000000;
 }
 
+.card-button-link:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+
 .card-button-link::after {
     position: absolute;
+    top: 6px;
+    left: 0;
     display: block;
     content: "";
     width: 100%;
+    height: 8px;
     background: #FFE17F;
+    z-index: -1;
+}
+
+.card-list-item-link-catalog:active ~ .card-button-link::after {
+    background: #FFC700;
 }
 
 .new-card {
@@ -2137,8 +2224,8 @@ body {
     opacity: 0.3;
 }
 
-.card-list-item-link-catalog:focus-visible {
-    border: 2px solid #AF4FFF;
+.card-list-item-link-catalog:focus{
+    outline: none;
 }
 
 .button-card-list {
