@@ -135,6 +135,7 @@ body {
 }
 
 .page-novigation-form {
+    display: flex;
     height: 40px;
 }
 
@@ -1003,15 +1004,12 @@ body {
     z-index: -1;
 }
 
-.action-form
-
 .title-characteristic {
     font-family: 'Rubik';
     font-weight: 400;
     font-size: 36px;
     line-height: 30px;
     color: #000000;
-
 }
 
 .text-card-list {
@@ -1870,6 +1868,12 @@ body {
     margin-top: -1px;
     color: #FF3D3D;
 
+}
+
+.modal-button-price-container {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .field-box {
