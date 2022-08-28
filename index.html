@@ -31,7 +31,7 @@
                       <input class="search" type="search" name="search" placeholder="Текст поиска" required >
                     </label>
                     <label class="label-search">
-                      <button class="aside-button" type="button">Найти</button>
+                      <button class="aside-button" type="submit">Найти</button>
                     </label>
                   </form>
                   <p class="">
@@ -163,9 +163,132 @@
       </header>
       <main class="page-main">
           <div class="main-container">
-            <div class="">
+            <section class="card-slider">
               <div class="header-decoration-container">
-                <span class="header-decoration">01</span>
+                <h2 class="visually-hidden">Описание товара</h2>
+                <ul class="card-slider-list">
+                  <li class="card-slider-list-item">
+                    <div class="header-decoration-text">
+                      <span class="header-decoration">01</span>
+                    </div>
+                      <div class="main-card-container">
+                        <div class="slider-image-wrapper">
+                          <img class="main-img" src="img/main-parrot.png" width="560" height="560" alt="Квадракоптер">
+                        </div>
+                        <div class="slider-content-block">
+                          <section class="main-header-discription-card">
+                            <p class="main-title">Порхает как бабочка, <br> жалит как пчела!</p>
+                            <p class="discription-card">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                            <div class="circle-button-container">
+                              <a class="button main-header-button" href="#">Подробнее</a>
+                            </div>
+                            <ul class="card-list-characteristic">
+                              <li class="card-list-characteristic-item">
+                                <span class="title-characteristic">800 м</span>
+                                <span class="text-card-list">Дальность полета</span>
+                              </li>
+                              <li class="card-list-characteristic-item">
+                                <span class="title-characteristic">50 м</span>
+                                <span class="text-card-list">Радиус поражения</span>
+                              </li>
+                            </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <li class="card-slider-list-item visually-hidden">
+                    <div class="header-decoration-text">
+                      <span class="header-decoration">02</span>
+                    </div>
+                    <div class="main-card-container">
+                      <div class="slider-image-wrapper">
+                        <img class="main-img" src="img/slider-2.png" width="560" height="560" alt="Умные часы.">
+                      </div>
+                      <div class="slider-content-block">
+                        <section class="main-header-discription-card">
+                          <p class="main-title">Худеем<br>
+                            правильно!</p>
+                          <p class="discription-card">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                          <div class="circle-button-container">
+                            <a class="button main-header-button" href="#">Подробнее</a>
+                          </div>
+                          <ul class="card-list-characteristic">
+                            <li class="card-list-characteristic-item">
+                              <span class="title-characteristic">48 часов</span>
+                              <span class="text-card-list">Без подзарядки</span>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="card-slider-list-item visually-hidden">
+                    <div class="header-decoration-text">
+                      <span class="header-decoration">03</span>
+                    </div>
+                    <div class="main-card-container">
+                      <div class="slider-image-wrapper">
+                        <img class="main-img" src="img/slider-3.png" width="560" height="560" alt="Селфи-палка.">
+                      </div>
+                      <div class="slider-content-block">
+                        <section class="main-header-discription-card">
+                          <p class="main-title">Делай селфи, <br> как Бен Стиллер!
+                          <p class="discription-card">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                          <div class="circle-button-container">
+                            <a class="button main-header-button" href="#">Подробнее</a>
+                          </div>
+                          <ul class="card-list-characteristic">
+                            <li class="card-list-characteristic-item">
+                              <span class="title-characteristic">8,5 м</span>
+                              <span class="text-card-list">Длина палки</span>
+                            </li>
+                            <li class="card-list-characteristic-item">
+                              <span class="title-characteristic">5 кг</span>
+                              <span class="text-card-list">Вес палки</span>
+                            </li>
+                            <li class="card-list-characteristic-item">
+                              <span class="title-characteristic">Карбон</span>
+                              <span class="text-card-list">Материал</span>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <button class="slider slider-left" type="button">
+                  <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер влево.">
+                    <g clip-path="url(#clip0_24_641)">
+                    <path d="M20 60.3569H16.5L0 30.3569L16.5 0.356934H20L3.8 30.3569L20 60.3569Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_24_641">
+                    <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+                <button class="slider slider-right" type="button">
+                  <svg width="20" height="61" viewBox="0 0 20 61" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Слайдер вправо.">
+                    <g clip-path="url(#clip0_24_681)">
+                    <path d="M0 60.3569H3.5L20 30.3569L3.5 0.356934H0L16.2 30.3569L0 60.3569Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_24_681">
+                    <rect width="20" height="60" fill="white" transform="translate(0 0.356934)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+                <ul class="main-header-circle-list">
+                  <li class="circle-list-item">
+                    <button class="circle-button checked-circle" name="slider-card" type="button"></button>
+                  </li>
+                  <li class="circle-list-item">
+                    <button class="circle-button" name="slider-card" type="button"></button>
+                  </li>
+                  <li class="circle-list-item">
+                    <button class="circle-button" name="slider-card" type="button"></button>
+                  </li>
+                </ul>
+              </div>  <!-- <div><span class="header-decoration">01</span>
               </div>
               <div class="header-decoration-container visually-hidden">
                 <span class="header-decoration">02</span>
@@ -255,17 +378,6 @@
                   <p class="discription-card">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                   <div class="circle-button-container">
                     <a class="button main-header-button" href="#">Подробнее</a>
-                    <ul class="main-header-circle-list">
-                      <li class="circle-list-item">
-                        <button class="circle-button" type="button"></button>
-                      </li>
-                      <li class="circle-list-item">
-                        <button class="circle-button" type="button"></button>
-                      </li>
-                      <li class="circle-list-item">
-                        <button class="circle-button checked-circle" type="button"></button>
-                      </li>
-                    </ul>
                   </div>
                     <ul class="card-list-characteristic">
                       <li class="card-list-characteristic-item">
@@ -283,7 +395,8 @@
                     </ul>
                 </section>
               </section>
-            </div>
+            </div> -->
+            </section>
 
             <section class="tiny-card">
               <h2 class="visually-hidden">Разнообразие товаров</h2>
@@ -394,7 +507,7 @@
               <p class="main-info-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки. </p>
               <h3 class="contacts-title">Интернет-магазин «Девайс»</h3>
               <p class="main-info-text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>
-                <a class="link-number footer-number" href="tel:7-812-812-12-12">+7 (812) 812-12-12</a>
+                <a class="link-number footer-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </p>
               <h3 class="contacts-title">Время работы</h3>
               <p class="main-info-text">пн—пт: с 10:00 до 22:00 <br>
@@ -413,7 +526,7 @@
                 <div class="form-container-input">
                   <form class="action-form" action="#">
                       <input class="email" required  type="email" name="email" placeholder="Ваш e-mail">
-                      <button class="main-aside-button" type="button">Подписаться</button>
+                      <button class="main-aside-button" type="submit">Подписаться</button>
                   </form>
                   <span class="aside-free">Это бесплатно</span>
                 </div>
@@ -449,7 +562,7 @@
                 <a class="navigation-link footer-link" href="#">Контакты</a>
               </li>
             </ul>
-            <a class="link-number link-number-footer footer-number" href="tel:7-812-812-12-12">
+            <a class="link-number link-number-footer footer-number" href="tel:+78128121212">
               Тел.: +7 (812) 812-12-12
             </a>
           </div>
@@ -577,7 +690,7 @@
                 </fieldset>
               </fieldset>
               </div>
-              <button class="button modal-button" type="button"><span>Отправить</span></button>
+              <button class="button modal-button" type="submit"><span>Отправить</span></button>
             </form>
         </div>
       </div>

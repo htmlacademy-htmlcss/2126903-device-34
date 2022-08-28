@@ -81,9 +81,9 @@ body {
 }
 
 .page-novigation {
-    padding-top: 32px;
+    padding-top: 30px;
     background: #FFE17F;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
 }
 
 .page-novigation-container{
@@ -322,13 +322,27 @@ body {
 
 .header-decoration-container {
     width: 1160px;
-    margin-top: -10px;
-    height: 118px;
-    background: #FFE17F;
+}
+
+.header-decoration-text {
+  width: 1160px;
+  background-color: #FFE17F;
+  height: 112px;
 }
 
 .page-main {
     flex-grow: 1;
+}
+
+.card-slider-list {
+  margin: 0;
+  padding: 0;
+  margin-top: px;
+  list-style-type: none;
+}
+
+.slider-image-wrapper {
+  margin-right: 43px;
 }
 
 .header-decoration{
@@ -336,12 +350,18 @@ body {
     display: inline-block;
     margin: 0;
     padding: 0;
-    margin-top: 60px;
-    margin-left: 897px;
+    margin-top: 45px;
+    margin-left: 900px;
     font-weight: 700;
     font-size: 180px;
     line-height: 30px;
     color: #fff;
+}
+
+.main-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -140px;
 }
 
 .label-search {
@@ -349,6 +369,7 @@ body {
 }
 
 .search {
+    font-family: 'Rubik';
     padding: 10px 52px;
     width: 372px;
     border-radius: 40px 0 0 40px;
@@ -363,12 +384,13 @@ body {
 }
 
 .aside-button {
+    font-family: 'Rubik';
     padding: 10px 58px;
     margin-left: -15px;
     border-radius: 0 40px 40px 0;
     border: 2px solid #000000;
     background-color: #FFE17F;
-    margin-right: 49px;
+    margin-right: 45px;
     font-size: 15px;
     cursor: pointer;
 }
@@ -450,8 +472,14 @@ body {
 }
 
 .main-container {
+  position: relative;
     width: 1160px;
     margin: 0 auto;
+}
+
+.card-slider {
+  display: block;
+  margin-bottom: 60px;
 }
 
 .service-container {
@@ -520,7 +548,7 @@ body {
     position: absolute;
     width: 20px;
     height: 60px;
-    top: 200px;
+    top: 170px;
     background: none;
     border: none;
     cursor: pointer;
@@ -544,16 +572,20 @@ body {
 }
 
 .slider-right {
-    right: 7px;
+    right: 605px;
 }
 
 .discription-card {
+    width: 555px;
     font-family: "Rubik";
     margin-bottom: 51px;
     color: #444444;
 }
 
 .main-header-circle-list {
+    position: absolute;
+    right: 0;
+    bottom: 485px;
     display: flex;
     margin: 0;
     padding: 0;
@@ -561,7 +593,7 @@ body {
 }
 
 .circle-list-item{
-    margin-right: 16px;
+    margin-right: 18px;
 }
 
 .circle-list-item:last-child {
@@ -2353,6 +2385,11 @@ body {
     margin-bottom: 35px;
 }
 
+.fieldest-bluetooth {
+    margin-bottom: 30px;
+}
+
+
 .range-scale {
     position: relative;
     height: 2px;
@@ -2459,6 +2496,7 @@ body {
     height: 17px;
     outline: 2px solid #CCCCCC;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .control:hover .control-mark {
@@ -2505,6 +2543,7 @@ body {
 
 .control-input[type="radio"] + .control-mark {
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
