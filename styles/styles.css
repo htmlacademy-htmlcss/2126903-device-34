@@ -234,7 +234,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
 }
 
@@ -515,7 +515,7 @@ body {
 .service-advantage{
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
 }
 
 .main-aside-container {
@@ -1359,7 +1359,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 85px;
+    margin-bottom: 89px;
 }
 
 .aside-title {
@@ -1386,7 +1386,7 @@ body {
 .form-container-input {
     display: flex;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 54px;
 }
 
 .aside-text {
@@ -2307,7 +2307,7 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin-right: 120px;
+    margin-right: 128px;
 }
 
 .pagination-list-item-link{
@@ -2372,6 +2372,10 @@ body {
 
 .pagination-slider-back {
     margin-right: 142px;
+}
+
+.pagination-slider-next {
+
 }
 
 
